@@ -1,0 +1,36 @@
+.signasa {
+    border: 0px solid black;
+	margin: auto;
+    background-color: #DBF0F7;
+	padding-bottom: 100px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1100px;
+	border-radius: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+}
