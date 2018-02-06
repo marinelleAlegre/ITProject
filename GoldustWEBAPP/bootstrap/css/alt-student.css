@@ -1,0 +1,212 @@
+/*#############################################
+* GENERAL STYLES 
+##############################################*/
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #6286ae;
+}
+
+.defaultcolor{
+  background-color:#005B9A !important;
+  color: white !important;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.studmenu{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.welcome {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+a.list-group-item:focus,
+button.list-group-item:focus {
+	background-color: #f6f6f6;
+	color: black;
+}
+
+a.list-group-item:hover,
+button.list-group-item:hover {
+	background-color: #f6f6f6;
+	color: black;
+}
+
+a.list-group-item,
+button.list-group-item {
+	background-color: white;
+	color: black;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.graybg {
+	background-color: #f6f6f6 !important;
+	margin-top: -20px;
+}
+
+.center {
+	text-align: center;
+}
+
+.gradesview {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+
+/*********************** PROFILE PAGE **********************/
+
+.iconprofile{
+  margin-bottom: 10px !important;
+}
+
+.panel-heading-profile{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #005B9A !important;
+  border: 1px solid #005B9A !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-body-profile{
+  padding: 25px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.panel-profile{
+  margin-bottom: 20px !important;
+  background-color: #fff !important;
+  border: 1px #005B9A !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.boldcenter {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #ffffff !important;
+}
+
+.lheight{
+  line-height: 10px !important;
+  margin: 31px !important;
+}
+
+#text-align-right {
+    text-align: right;
+}
+
+#text-align-center {
+    text-align: center;
+}
+
+.profile-image-center {
+	margin: 0 auto !important;
+}
+
+.iconprofile{
+  margin-bottom: 10px !important;
+}
+
+.universal-form-fields .text-align-right-profile{
+  text-align: right !important;
+}
+
+/*************** GRADES ****************/
+.display-grade-title {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.student-grade-panel{
+  background-color: #005B9A !important;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  color: #ffffff;
+}
+
+.student-grade-table .student-grade-table-heading th{
+  background-color: #005B9A !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.shortbutton {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.staff-table{
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.staff-table .staff-table-heading th{
+  background-color: #005B9A !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+/*#############################################
+* DESKTOP VIEW
+##############################################*/
+  @media (min-width: 992px) {
+    .profile-input{
+      width: 250px
+    }
+  }/*end of @media 992*/
+
+
+/*#############################################
+* TABLET VIEW
+##############################################*/
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  } /*end of media 768-979*/
+
+
+/*#############################################
+* MOBILE VIEW
+##############################################*/
+  @media (max-width: 767px) {
+
+    .universal-form-fields .text-align-right{
+        text-align: left;
+    }
+    
+    .profile-input{
+      width: 200px
+    }
+
+    .universal-form-fields .text-align-right-profile{
+      text-align: left !important;
+    }
+
+  }/*end of @media 767*/

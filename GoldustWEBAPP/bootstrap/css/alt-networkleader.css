@@ -1,0 +1,420 @@
+/*#############################################
+* GENERAL STYLES 
+##############################################*/
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+#text-align-right {
+    text-align: right;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #6286ae;
+}
+
+.defaultcolor{
+  background-color:#005B9A !important;
+  color: white !important;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+/*//////////////////////////// STUDENT RECORDS PAGE ///////////////////////////*/
+
+.student-records-section .process-level{
+	margin-bottom: 30px;
+}
+
+.student-records-section .process-level h3{
+	text-align: center;
+}
+
+#requirements{
+	margin-top: 0px;
+}
+
+.search{
+	margin-bottom: 20px;
+}
+
+.student-frequency{
+	margin-left: 10px;
+}
+
+.table-hover .table-heading:hover,
+.table-hover .table-lessons:hover{
+	background-color: transparent;	
+}
+
+.table-lessons-heading{
+	text-align: center;
+}
+
+.table-lessons td{
+	border-top: transparent !important;
+}
+
+.nav-container{
+	text-align: center;
+}
+
+.nav-container ul{
+	display: inline-block;
+	padding: 0px;
+}
+
+.nav-container ul li{
+	width: 100% !important;
+	text-align: left !important;
+}
+
+.nav-container ul a{
+	display: block;
+}
+
+.btn-default-width {
+  width: 100px !important;
+  
+}
+
+.coordinator-new-enrollment-form{
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #005B9A;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important; 
+}
+
+
+/*//////////////////////////// LESSONS PAGE ///////////////////////////*/
+
+.lessons-section{
+	margin-top: 20px;
+}
+
+.lessons-section .card-holder{
+	margin-bottom: 50px;
+}
+
+.lessons-section .card{
+	padding: 0px;
+	border: 1px solid #000000;
+}
+
+.card .title{
+	padding: 10px;
+	background: #00385f !important;
+	height: 75px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.card .schedule{
+	padding: 10px;
+	background: #005B9A !important;
+  color: #ffffff;
+	text-align: center;
+}
+
+.card .time-date,
+.card .process-level{
+	margin: 10px;
+}
+
+.whitebg {
+	background-color: white;
+}
+
+/*//////////////////////////// PROFILE PAGE ///////////////////////////*/
+
+.profile{
+	text-align: center;
+	margin: auto;
+}
+
+.profile i{
+	font-size: 30pt;
+	margin-bottom: 20px;
+}
+
+.profile-attributes p{
+	text-align: right;
+}
+
+.panel-profile{
+  margin-bottom: 20px !important;
+  background-color: #fff !important;
+  border: 1px #005B9A !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.panel-heading-profile{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #005B9A !important;
+  border: 1px solid #005B9A !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+
+/*#############################################
+* END OF GENERAL STYLES 
+##############################################*/
+
+
+/*#############################################
+* DESKTOP VIEW
+##############################################*/
+	@media (min-width: 992px) {
+		.profile-input{
+      width: 250px
+    }
+	}/*end of @media 992*/
+
+
+/*#############################################
+* TABLET VIEW
+##############################################*/
+	@media (min-width: 768px) and (max-width: 991px) {
+		
+	} /*end of media 768-979*/
+
+
+/*#############################################
+* MOBILE VIEW
+##############################################*/
+	@media (max-width: 767px) {
+
+/*//////////////////////////// NAVIGATION ///////////////////////////*/
+		.banner{
+			background: url('../images/header.png') center fixed no-repeat;
+			box-shadow: 3px 3px 7px #cccccc;
+			border-bottom: solid 3px #113743;
+		}
+
+		.navbar-toggle{
+			background-color: #000000;
+		}
+
+		.navbar{
+			background: transparent;
+			box-shadow: none;
+			border-bottom: transparent;
+			border-color: transparent;
+		}
+
+		.nav-cp>li>a{
+			color: #ffffff;
+			font-weight: 900;
+		}
+
+		.nav-cp>li>a:hover{
+			
+			letter-spacing: 2px;
+			-webkit-transition: all 300ms;
+			-moz-transition: all 300ms;
+			-o-transition: all 300ms;
+			transition: : all 300ms;
+		}
+
+		.nav-cp>li.active>a,
+		.nav-cp>li.active>a:focus,
+		.nav-cp>li.active>a:hover{
+			color: #000000 !important;
+			background-color: #ffffff !important;
+			letter-spacing: 2px;
+		}
+
+
+
+/*//////////////////////////// STUDENT RECORDS PAGE ///////////////////////////*/
+
+		.requirements{
+			margin-bottom: 30px;
+		}
+
+		.requirements ul li{
+			text-align: center !important;
+		}
+
+    #text-align-right{
+        text-align: left !important;
+    }
+
+    .coordinator-student-form-fields > label{
+      text-align: left !important;
+    }
+
+    .text-align-right{
+      text-align: left !important;
+    }
+
+    .universal-form-fields label{
+      text-align: left !important;
+    }
+
+    .universal-form-fields .text-align-right{
+        text-align: left;
+    }
+
+    .profile-input{
+      width: 200px
+    }
+	}/*end of @media 767*/
+
+
+	.staff-table{
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.staff-table .staff-table-heading th{
+  background-color: #005B9A !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.panel-heading-custom{
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  background-color: #00385f !important;
+  border-color: transparent !important; 
+}
+
+staff-table .staff-table-heading th {
+    background-color: #005B9A !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text-align-center{
+  text-align: center !important;
+}
+
+
+.textsize{
+	font-size: 23px !important;
+	font-weight: bold;
+}
+.fontbold{
+	font-weight: bold !important;
+}
+
+.staff-table{
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.staff-table .staff-table-heading th{
+  background-color: #005B9A !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.formpaymentsize{
+	width:50% !important;
+}
+
+.form-control1 {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control1:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control1::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control1:-ms-input-placeholder {
+  color: #999;
+}
+.form-control1:-webkit-input-placeholder {
+  color: #999;
+}
+.form-control1::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control1[disabled],
+.form-control1[readonly],
+fieldset[disabled] .form-control1 {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+textarea.form-control1 {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control1,
+  input[type="time"].form-control1,
+  input[type="datetime-local"].form-control1,
+  input[type="month"].form-control1 {
+    line-height: 34px;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm,
+  .input-group-sm input[type="date"],
+  .input-group-sm input[type="time"],
+  .input-group-sm input[type="datetime-local"],
+  .input-group-sm input[type="month"] {
+    line-height: 30px;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg,
+  .input-group-lg input[type="date"],
+  .input-group-lg input[type="time"],
+  .input-group-lg input[type="datetime-local"],
+  .input-group-lg input[type="month"] {
+    line-height: 46px;
+  }
+}

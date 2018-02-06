@@ -1,0 +1,684 @@
+/*#############################################
+* GENERAL STYLES 
+##############################################*/
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.dark-blue-btn {
+  background-color: #196ba4 !important;
+  border-color: #fff !important;
+}
+
+.dark-blue-btn:hover {
+  background-color: #00487b !important;
+}
+
+.urlcursor {
+  cursor: pointer;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #6286ae;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+/*//////////////////////////// REQUIREMENT SETTING PAGE ///////////////////////////*/
+
+.admin-panel{
+  background-color: #005B9A !important;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.admin-attrib-mod-panel {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.table > thead > tr > th {
+text-align: center;
+}
+
+.admin-users-nav{
+  width: 100% !important;
+}
+
+
+/*//////////////////////////// NETWORK LEADERS PAGE ///////////////////////////*/
+
+.imgprofile{
+ 	border-radius: 100%;
+ 	width: 40px;
+ 	height: 40px;
+ }
+
+.profilepic{
+	border-radius: 100%;
+ 	width: 200px;
+ 	height: 200px;
+ 	color: #008080;
+}
+
+.profile{
+	border-radius: 100%;
+	float: right;
+	padding-right: 20px;
+}
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.panel-heading-admin{
+	background: #005B9A !important;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    		box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.panel-heading-networkleader-form{
+  background: #005B9A;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important; 
+}
+
+.panel-networkleader{
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.panel-networkleader span .delete-btn{
+  margin-right: 5px;
+}
+
+.networkleader-container{
+  margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #00FFFF
+}
+
+.show {
+  display:block;
+}
+
+.Body{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.btn{
+	margin: 0 auto;
+}
+
+.btn2{
+	margin: 0 auto; 
+}
+
+.archive-btn{
+  margin-right: 10px;
+}
+
+.LoginBody{
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.LoginButton{
+	margin-left: 70px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.statustitle { 
+	width:400px;
+	margin-top: 50px;
+	background-color: black;
+}
+
+.LoginContainer {
+ position: relative;
+ margin: 0 auto;
+ width:300px;
+ height: 45px;
+ padding-top: 100px;
+  height:30px;
+}
+
+.table{
+	margin-right: 1000px;
+}
+
+.mainnav {
+	height: 45px;
+	padding: 0px; 
+	background: #c5001a;
+	color: white;
+}
+
+.male{
+	padding-top:  -20px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+.female{
+	padding-top:  -30px;
+	margin-left: 400px;
+	padding-top: 10px;
+	margin-right: 10px;
+}
+
+.schooldiv {
+	margin-top: -40px;
+	margin-left: 100px;
+	text-align: center;
+}
+
+.btnside {
+	border: 0px;
+	background: transparent;
+	color: white;
+	margin-top: 5px;
+	width: 20px;
+}
+
+.btnside:hover {
+	background: transparent;
+	color: white;
+}
+
+.log{
+
+	padding-top: 20px;
+}
+
+.btnside:focus,
+.btnside:active:focus,
+.btnside.active:focus,
+.btnside.focus,
+.btnside:active.focus,
+.btnside.active.focus {
+  	background: transparent;
+	color: white;
+}
+
+.navig {
+	background: #e4e3db;
+	margin-top:-21px;
+	 -webkit-box-shadow:0px 2px 10px rgba(0, 0, 0, .125);
+	height: 35px;
+}
+
+.droptable {
+	width: 500px;
+	margin: 0 auto;
+	display: table;
+}
+
+.redbg {
+	background-color: red !important;
+}
+
+.men {
+	margin: 0 auto;
+	position: relative;
+}
+
+.boldcenter {
+	font-weight: bold;
+	text-align: center;
+	color:white;
+}
+
+.adj{
+	width: 50px !important;
+	position: relative;
+}
+
+.rounded {
+	color:white;
+  border-radius: 100%;
+  background: 	#FF0000; 
+  float:right;
+  box-shadow: 0px 5px 5px 2px #808080;
+}
+
+.darkbluebg {
+	background-color: #005B9A !important;
+}
+
+.boldcenter {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #ffffff !important;
+}
+
+.networkleader-edit-form{
+  width: 800px;
+  margin: auto;
+}
+
+.selected { color:red; }
+
+.white-border {
+  border-color: white !important;
+  background-color: #005B9A !important;
+}
+
+.white-border:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.white-border-black:hover {
+  background-color: #285f8f !important;
+  color: white !important;
+  /*border-color: #fff !important;*/
+}
+
+
+/*//////////////////////////// STAFF PAGE ///////////////////////////*/
+
+/*//////////////////////////// DROP PAGE ///////////////////////////*/
+
+.reason {
+  width: 100% !important;
+}
+
+/*//////////////////////////// COORDINATORS PAGE ///////////////////////////*/
+
+.data-form{
+  margin-bottom: 10px;
+}
+
+.panel-body .form-fields{
+  padding: 0;
+}
+
+.panel-body label{
+      word-wrap: break-word;
+}
+
+.coordinator-label{
+  text-align: right;
+}
+
+.coordinator-value{
+  word-wrap: break-word
+}
+
+.modal-header{
+  background-color: #005B9A !important;
+  color: #ffffff;
+}
+
+.modal-header .close{
+  color: #ffffff;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+  color: #dddddd;
+}
+
+.list-group-item{
+  width: 100%;
+  margin-bottom: 3px !important;
+}
+
+.list-group .list-group-item:hover{
+  -webkit-transition: all 350ms !important;
+  -moz-transition: all 350ms !important;
+  -ms-transition: all 350ms !important;
+  -o-transition: all 350ms !important;
+  transition: all 350ms !important;
+  background-color: #007ed6 !important;
+  color: #ffffff !important;
+}
+
+/*//////////////////////////// AUTHENTICATIONS PAGE ///////////////////////////*/
+
+.search-for-reset {
+  width: 300px;
+}
+
+.search-student-records-history{
+  margin-bottom: 20px !important;
+}
+
+.button-search{
+  background: #007ed6;
+  color: #ffffff;
+}
+
+.button-search:hover{
+  -webkit-transition: all 350ms ;
+  -moz-transition: all 350ms ;
+  -ms-transition: all 350ms ;
+  -o-transition: all 350ms ;
+  transition: all 350ms !important;
+  background-color: #337ab7;
+  text-shadow: 1px 1px rgba(245, 245, 245, .8);
+  color: #ffffff !important;
+}
+
+.table .table-heading th {
+    background-color: #005B9A !important;
+    color: #ffffff;
+    text-align: center;
+}
+
+.school-lvl-btn {
+  width: 200px !important;
+}
+
+/*//////////////////////////// LOGS PAGE ///////////////////////////*/
+
+.logs-event-time{
+  width: 150px;
+}
+
+.logs-user-id{
+  width: 100px;
+}
+
+.logs-user-name{
+  width: 150px; 
+}
+
+.logs-command-type{
+  width: 150px;
+}
+
+/*//////////////////////////// ADMIN PROFILE PAGE ///////////////////////////*/
+
+.iconprofile{
+  margin-bottom: 10px !important;
+}
+
+.panel-heading-profile{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #005B9A !important;
+  border: 1px solid #005B9A !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-body-profile{
+  padding: 25px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.panel-profile{
+  margin-bottom: 20px !important;
+  background-color: #fff !important;
+  border: 1px #005B9A !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.boldcenter {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #ffffff !important;
+}
+
+.edit-profile button{
+  text-align: right;
+}
+
+/* COPIED FROM STAFF PERSPECTIVE */
+
+.panel-heading-edit-form{
+  background: #005B9A;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important; 
+}
+
+.admin-new-edit-form{
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #005B9A;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important; 
+}
+
+.admin-modal-form{
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid white;
+}
+
+.admin-edit-form-fields{
+  margin-bottom: 10px;
+}
+
+.admin-edit-form-fields label{
+  margin-bottom: 0;
+  line-height: 34px;
+  text-align: right !important;
+}
+
+.white-footer {
+  background-color: white !important;
+}
+
+ #change-password .text-align-right-profile{
+  text-align: right !important;
+}
+
+/*#############################################
+* END OF GENERAL STYLES 
+##############################################*/
+
+/*#############################################
+* DESKTOP VIEW
+##############################################*/
+  @media (min-width: 992px) {
+    .profile-input{
+      width: 250px
+    }
+  }/*end of @media 992*/
+
+
+/*#############################################
+* TABLET VIEW
+##############################################*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .networkleader-edit-form{
+        width: auto;
+    }
+
+    .profile-navigate {
+        margin-bottom: 20px;
+    }
+  } /*end of media 768-979*/
+
+
+/*#############################################
+* MOBILE VIEW
+##############################################*/
+  @media (max-width: 767px) {
+    .networkleader-edit-form{
+        width: auto;
+    }
+
+    .archive-btn {
+       margin-right: 0px; 
+    }
+
+    .staff-student-form-fields .fields{
+        text-align: left;
+    }
+
+    .profile-navigate{
+        margin-bottom: 20px;
+    }
+
+    .admin-modal-form .row .text-align-right{
+        text-align: left !important;
+    }
+
+    .panel-networkleader span .delete-btn{
+        margin-right: 0px;
+    }  
+    
+    .admin-edit-form-fields .text-align-right{
+        text-align: left; 
+    }
+
+    .universal-form-fields .text-align-right{
+        text-align: left;
+    }
+
+    #change-password .text-align-right-profile{
+      text-align: right !important;
+    }
+
+    .profile-input{
+      width: 200px
+    }
+  }/*end of @media 767*/
+
+
+
+    .intro-lead-in{
+        font-size: 60px;
+        color:black !important;
+    }
+
+
+    .homepagestaff{
+        background-color: red !important;
+        color: white;
+    }
+
+
+    .welcome {
+        width: 770px;
+        margin: 0 auto;
+        margin-top: 40px;
+        box-shadow: 5px 5px 5px #888888 !important;
+    }
+
+    .welcomedate {
+        width: 300px !important;
+        margin: 0 auto;
+        margin-top: 1000px;
+        box-shadow: 5px 5px 5px #888888 !important;
+    }
+
+    .colorr{
+      color:red !important;
+
+    }
+
+    .colorg{
+      color: #027B0A !important;
+    }
+
+    .colorb{
+      color: #0635D1 !important;
+    }
+
+    .intro-heading{
+      font-size:20px;
+    }
+
+    .cwhite{
+      color: white !important;
+    }
+
+    #boldtext{
+      font-weight: bold;
+    }
+
+    .studmenu{
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .panelhome2{
+       width:;
+    }
+
+    .imgsize{
+      width:100px !important;
+      height: 100px !important;
+      border-radius: 50px !important;
+    }
+
+    .homepshad{
+      box-shadow: 5px 5px 5px #888888 !important;
+    }
+
+    .boldtext{
+      font-weight: bold !important;
+    }
+
+    .thumbnail1{
+      height:200px !important;
+      width:300px !important;
+    }
+
+    .thumbnail2{
+      height:200px !important;
+      width:210px !important;
+    }
+
+    .thumbnail3{
+      height:180px !important;
+      width:210px !important;
+    }

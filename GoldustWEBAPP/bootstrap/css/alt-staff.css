@@ -1,0 +1,684 @@
+/*//////////////////////////// ENROLLMENT PAGE ///////////////////////////*/
+
+.enrollment-form{
+  margin: auto;
+  width: 900px;
+}
+
+.staff-new-enrollment-form{
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #005B9A;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important; 
+}
+
+.enrollment-btn{
+  word-wrap: break-word;
+}
+
+.staff-score-input,
+.staff-score-input:hover{
+  border: 1px solid #dddddd;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tuition{
+  margin-bottom: 5px;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #6286ae;
+}
+
+.defaultcolor{
+  background-color:#005B9A !important;
+  color: white !important;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+
+/*//////////////////////////// SCORING PAGE ///////////////////////////*/
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+    background-color: #1b4467 !important;
+}
+
+.staff-nav-requirements{
+  margin-bottom: 20px;
+  overflow-y: hidden;
+}
+
+.staff-nav-requirements .universal-nav-ul button{
+  margin-bottom: 3px;
+}
+
+.staff-nav-requirements::-webkit-scrollbar {
+  height: 10px;
+}
+
+.staff-nav-requirements::-webkit-scrollbar-track {
+  background-color: rgba(0,91,154,0.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+ 
+.staff-nav-requirements::-webkit-scrollbar-thumb {
+  background-color: rgb(0,91,154); 
+  border-radius: 10px;
+  width: 5px;
+}
+
+.staff-student-names input{
+  width: 100%;
+}
+/*//////////////////////////// PAYMENT PAGE ///////////////////////////*/
+
+table{
+  margin-bottom: 0px !important;
+  border-radius: 3px;
+}
+
+.search-payment-history{
+  margin-bottom: 20px !important;
+  width: 25%;
+}
+
+.text-align-center{
+  text-align: center !important;
+}
+
+.text-align-left{
+  text-align: left !important;
+}
+
+#text-align-right{
+  text-align: right;
+}
+
+.staff-payment-input{
+    -webkit-appearance: textfield !important;
+    background-color: white !important;
+    -webkit-rtl-ordering: logical !important;
+    user-select: text !important;
+    cursor: auto !important;
+    padding: 1px !important;
+    border-image: initial !important;
+    text-align: center;
+    height: inherit !important;
+}
+
+/*//////////////////////////// GRADING PAGE ///////////////////////////*/
+
+.staff-gender{
+  margin: 0px auto 20px auto !important;
+  padding: 10px 20px;
+  width: 50%;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  border-radius: 3px;
+}
+
+.staff-gender-container{
+  margin: auto;
+}
+
+.staff-gender-ul li a{
+  background-color: #0191C3 !important;
+  text-align: center;
+  margin: 0px 5px;
+  color: #ffffff;
+}
+
+.staff-gender-ul li a:hover,
+.staff-gender-ul li a:active,
+.staff-gender-ul li a:focus{
+  -webkit-transition: all 350ms !important;
+  -moz-transition: all 350ms !important;
+  -ms-transition: all 350ms !important;
+  -o-transition: all 350ms !important;
+  transition: all 350ms !important;
+  background-color: #286090 !important;
+  color: #f5f5f5 !important;
+}
+
+.staff-gender-container .staff-gender-ul > .active > a,
+.staff-gender-container .staff-gender-ul > .active > a:hover,
+.staff-gender-container .staff-gender-ul > .active > a:active{
+  background-color: #286090 !important;
+  color: #f5f5f5 !important;
+}
+
+.staff-table{
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.staff-table .staff-table-heading th{
+  background-color: #005B9A !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.staff-network-leader{
+  background-color: #ececec;
+  color: #001a2b;
+  font-size: initial;
+}
+
+.download-student-btn{
+  margin-bottom: 10px !important;
+}
+
+.staff-network-leader:hover{
+  -webkit-transition: all 350ms !important;
+  -moz-transition: all 350ms !important;
+  -ms-transition: all 350ms !important;
+  -o-transition: all 350ms !important;
+  transition: all 350ms !important;
+  background-color: #ececec !important;
+  color: #001a2b !important;
+}
+
+.staff-student-names:hover,
+.staff-student-names:hover > td input{
+  -webkit-transition: all 200ms ;
+  -moz-transition: all 200ms !important;
+  -ms-transition: all 200ms !important;
+  -o-transition: all 200ms !important;
+  transition: all 200ms !important;
+  color: #005B9A !important;
+  background-color: #f5f5f5;
+}
+
+.staff-student-names:hover > td > form > input{
+  background-color: #f0ad4e;
+  color: #ffffff !important;
+}
+
+.staff-student-names .small{
+  text-align: center;
+  border: transparent;
+}
+
+.update-btn {
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  position: fixed;
+  z-index: 999;
+  right: 7px;
+  bottom: 70px;
+  background: #005B9A;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: transparent;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.update-btn:hover{
+  -webkit-transition: all 350ms !important;
+  -moz-transition: all 350ms !important;
+  -ms-transition: all 350ms !important;
+  -o-transition: all 350ms !important;
+  transition: all 350ms !important;
+  text-shadow: 1px 1px rgba(245, 245, 245, .8);
+}
+
+/*//////////////////////////// STUDENT PROFILE PAGE ///////////////////////////*/
+
+.search-student-records-history{
+  margin-bottom: 20px !important;
+}
+
+/*//////////////////////////// STAFF PROFILE PAGE ///////////////////////////*/
+
+.iconprofile{
+  margin-bottom: 10px !important;
+}
+
+.panel-heading-profile{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #005B9A !important;
+  border: 1px solid #005B9A !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-body-profile{
+  padding: 25px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.panel-profile{
+  margin-bottom: 20px !important;
+  background-color: #fff !important;
+  border: 1px #005B9A !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.universal-form-fields .text-align-right-profile{
+  text-align: right !important;
+}
+
+.boldcenter {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #ffffff !important;
+}
+
+.lheight{
+  line-height: 15px !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.floatr{
+  float:right;
+
+}
+
+.floatl{
+  float:left;
+}
+
+
+.btndesign{
+  color;: white;
+  background-color: #00264d !important;
+    padding: 8px 49px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btndesign1{
+  color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    background-color: #00264d !important;
+}
+
+.btndesign2{
+    color: white;
+    padding: 1px 15px !important;
+    background-color: #00264d !important;
+}
+
+.panelstaff{
+  background-color: #00264d !important;
+}
+
+.colorwhite{
+  color:white;
+}
+
+.bg-primary1{
+  color: #fff;
+  background-color: #00264d;
+}
+
+
+.modalcontentlowwm{
+  padding-right: -500px;
+   background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.colorred{
+  color: #fff;
+  background-color:red;
+}
+
+.formsize{
+  width:60px;
+}
+
+.formsizefreshman{
+  width:120px;
+}
+
+.formsizeage{
+  width:60px;
+}
+
+.panelcolor1{
+  color: white !important;
+}
+
+.panelinfo1{
+  color: white !important;
+}
+
+.smallp{
+  line-height: 70%;
+}
+
+#hr1{
+  border-top: 5px solid #00264d !important;
+
+}
+
+.panel-info1{
+  border-color: #00264d;
+}
+
+.theadcolor{
+  background-color: #00264d;
+  color: white;
+
+}
+
+.tablew{
+  width:350px !important;
+}
+
+.formsizefreshman1{
+  width:40px;
+}
+
+.formsizefreshman2{
+  width:80px;
+}
+
+.tablegrades{
+  margin-right:100px;
+}
+
+.tableaccounts{
+  margin-right:100px; 
+}
+
+
+/*#############################################
+* END OF GENERAL STYLES 
+##############################################*/
+
+
+/*#############################################
+* DESKTOP VIEW
+##############################################*/
+  @media (min-width: 992px) {
+    .profile-input{
+      width: 250px
+    }
+  }/*end of @media 992*/
+
+
+/*#############################################
+* TABLET VIEW
+##############################################*/
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    .enrollment-form{
+      width: inherit;
+    }
+
+  } /*end of media 768-979*/
+
+
+/*#############################################
+* MOBILE VIEW
+##############################################*/
+  @media (max-width: 767px) {
+
+    .staff-new-enrollment-form #text-align-right{
+      text-align: left !important;
+    }
+
+    .enrollment-form{
+      width: inherit;
+    }
+
+    .universal-form-fields .text-align-right{
+        text-align: left;
+    }
+
+    .universal-form-fields .text-align-right-profile{
+      text-align: left !important;
+    }
+    .profile-input{
+      width: 200px
+    }
+
+  }/*end of @media 767*/
+
+
+
+
+
+.intro-lead-in{
+  font-size: 60px;
+  color:black !important;
+}
+
+
+.homepagestaff{
+background-color: red !important;
+color: white;
+}
+
+
+.welcome {
+  width:100%;
+  margin: 0 auto;
+  height: 400px
+  margin-top: 40px;
+  box-shadow: 5px 5px 5px #888888 !important;
+}
+
+.welcome5 {
+  width:100%;
+  margin: 0 auto;
+  height: 400px
+  margin-top: 40px;
+}
+
+.welcomedate {
+  width: 300px !important;
+  margin: 0 auto;
+  margin-top: 1000px;
+  box-shadow: 5px 5px 5px #888888 !important;
+}
+
+.colorr{
+  color:red !important;
+
+}
+
+.colorg{
+  color: #027B0A !important;
+}
+
+.colorb{
+  color: #0635D1 !important;
+}
+
+.intro-heading{
+  font-size:20px;
+}
+
+.cwhite{
+  color: white !important;
+}
+
+
+#boldtext{
+  font-weight: bold;
+}
+
+.studmenu{
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+.panelhome2{
+   width:;
+}
+
+
+
+
+.imgsize{
+  width:140px !important;
+  height: 100px !important;
+  border-radius: 50px !important;
+}
+
+
+.homepshad{
+  box-shadow: 5px 5px 5px #888888 !important;
+}
+
+
+
+.boldtext{
+  font-weight: bold !important;
+}
+
+
+.thumbnail1{
+  height:200px !important;
+  width:300px !important;
+}
+
+.thumbnail2{
+  height:200px !important;
+  width:210px !important;
+}
+
+.thumbnail3{
+  height:180px !important;
+  width:210px !important;
+}
+
+
+
+.lineweight{
+ border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+.alertinfo {
+    padding: 5px;
+    background-color: #2196F3; /* Blue */
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+.info-text{
+  font-size: 20px;
+}
+.panelshadow{
+  box-shadow: 5px 5px 5px #888888 !important;
+}
+
+.margins{
+  margin-left:10px;
+}
+
+.info{
+  background-color: #d9edf7 !important;
+}
+.imgsizelogo{
+  width:300px !important;
+  height: 200px !important;
+}

@@ -1,0 +1,122 @@
+/*#############################################
+* GENERAL STYLES 
+##############################################*/
+
+.boldcenter {
+  font-weight: bold !important;
+  text-align: center !important;
+  color: #ffffff !important;
+}
+
+.panel-heading-profile{
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #005B9A !important;
+  border: 1px solid #005B9A !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel-body-profile{
+  padding: 25px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+#text-align-right{
+  text-align: right;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #6286ae;
+}
+
+.defaultcolor{
+  background-color:#005B9A !important;
+  color: white !important;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.panel-profile{
+  margin-bottom: 20px !important;
+  background-color: #fff !important;
+  border: 1px #005B9A !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+}
+
+.universal-form-fields .text-align-right-profile{
+  text-align: right !important;
+}
+
+
+/*//////////////////////////// COORDINATOR PROFILE PAGE ///////////////////////////*/
+
+/*#############################################
+* LARGER DEVICE VIEW
+##############################################*/
+   @media (min-width: 1200px) {
+      .batch-container{
+        margin: auto;
+        padding: 0px 100px;
+        width: 75%;
+      }
+    }/*end of @media 1200*/
+
+/*#############################################
+* DESKTOP VIEW
+##############################################*/
+  @media (min-width: 992px) and (max-width: 1119px) {     
+     .batch-container{
+        margin: auto;
+        padding: 0px 100px;
+        width: 90%;
+      }
+
+      .profile-input{
+        width: 250px
+      }
+  }/*end of @media 992*/
+
+
+/*#############################################
+* TABLET VIEW
+##############################################*/
+  @media (min-width: 768px) and (max-width: 991px) {
+      .glyphicon-play{
+        width: 100px;
+      }    
+  } /*end of media 768-979*/
+
+
+/*#############################################
+* MOBILE VIEW
+##############################################*/
+  @media (max-width: 767px) {
+      .glyphicon-play{
+        width: 100px;
+      }
+
+      .universal-form-fields .text-align-right{
+          text-align: left;
+      }
+
+      .universal-form-fields .text-align-right-profile{
+        text-align: left !important;
+      }
+
+      .profile-input{
+        width: 200px
+      }
+  }/*end of @media 767*/
+
+
+
+
+

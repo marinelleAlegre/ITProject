@@ -1,0 +1,64 @@
+body{
+	font-family: 'quicksand-regular';
+	font-size: 16px;
+	background-size: 100% 100%;
+}
+
+header .header-wrapper{
+	padding: 0px;
+	width: 100%;
+}
+
+.name-container{
+	background-color: rgb(131, 3, 0);
+	height: 45px;
+}
+
+.name{
+	position: relative;
+	margin: 0px 35px; 
+	color: #ffffff;
+	text-align: left;
+	/*width: 500px;*/
+}
+
+.icon-profile{
+	position: relative;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+/*NAV*/
+
+.nav{
+	background: #ddd;
+}
+
+.nav li a{
+
+}
+
+.nav li a:hover{
+	border-bottom: 3px solid #113743;
+}
+/*HOME*/
+
+.welcome-box{
+	margin: 50px auto;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 500px;
+}
+
+.icon-welcome{
+	margin: 5px;
+	padding: 5px;
+}
+
+.view-what{
+	margin: auto;
+	width: 500px;
+}
+
+
