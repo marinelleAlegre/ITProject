@@ -1,5 +1,5 @@
 <head>
-		<title>Goldust Creations Event and Service Management System</title>
+		<title>Handler | Goldust Creations</title>
 		
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +19,14 @@
 		<link href="../bootstrap/css/jquery.dataTables.min" rel="stylesheet">
 		<link href="../bootstrap/css/dataTables.bootstrap.min" rel="stylesheet">
 		<link href="../bootstrap/css/animate.css" rel="stylesheet">
-		<link href="../bootstrap/fonts/font-face.css" rel="stylesheet" media="screen">    	
+		<link href="../bootstrap/fonts/font-face.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="../CustomCSS/customcss.css">    	
 		<script type="text/javascript" src="../jquery.dataTables/jquery-3.2.0.js"></script>
 		<script type="text/javascript" src="../jquery.dataTables/jquery.dataTables.min.js"></script>
 		<link href="../jquery.dataTables/jquery.dataTables.min.css" rel="stylesheet">
+		    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
 </head>

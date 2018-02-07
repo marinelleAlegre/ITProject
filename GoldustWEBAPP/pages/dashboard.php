@@ -2,11 +2,14 @@
 <html>
 <?php
 	include('head.php');
-	include('header.php');
-	include('navbar.php');
+
 ?>
 <body>
-	
+<?php
+
+	include('header.php');
+	include('footer.php');
+?>	
 </body>
 </html>
 
