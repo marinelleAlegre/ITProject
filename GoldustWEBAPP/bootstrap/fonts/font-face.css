@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'quicksand-regular';
-    src: url('Quicksand-Regular/Quicksand-Regular.eot');
-    src: url('Quicksand-Regular/Quicksand-Regular.eot') format('embedded-opentype'),
-         url('Quicksand-Regular/Quicksand-Regular.woff') format('woff'),
-         url('Quicksand-Regular/Quicksand-Regular.ttf') format('truetype'),
-         url('Quicksand-Regular/Quicksand-Regular.svg#quicksand-regular') format('svg');
-}
