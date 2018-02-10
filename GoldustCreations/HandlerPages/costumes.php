@@ -47,6 +47,7 @@ desired effect
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
+        <?php include("../costumesdata.php") ?>
 
     </section>
     <!-- /.content -->
