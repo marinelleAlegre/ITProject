@@ -7,6 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <title>Handler | Services</title>
   <?php include("../head.php") ?>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -57,7 +58,7 @@ desired effect
             <!-- /.box-header -->
 
             <div class="box-body">
-              <table id="rentaltable" class="table table-bordered table-striped" style="float: left">
+              <table id="rentaltable" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>Rental ID</th>
