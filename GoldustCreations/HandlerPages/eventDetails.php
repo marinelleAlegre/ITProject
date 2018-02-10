@@ -47,6 +47,10 @@ desired effect
       <?php include('../eventNav.php') ?>
     </section>
     <!-- /.content -->
+
+    <section class="content container-fluid">
+      
+    </section>
   </div>
   <!-- /.content-wrapper -->
 
