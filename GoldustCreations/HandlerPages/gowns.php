@@ -44,9 +44,13 @@ desired effect
     <!-- Main content -->
     <section class="content container-fluid">
       <?php include("../itemSelectionNav.php"); ?>
+
+      <?php include("../gownsdata.php") ?>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
+
+
 
     </section>
     <!-- /.content -->
