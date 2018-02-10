@@ -1,0 +1,19 @@
+.box-body { 
+	overflow: hidden;
+ }
+
+#rentaltable {
+	width: 50%; 
+	float: left;
+}
+
+#servicetable {
+	width: 50%; 
+	float: right;
+}
+
+#addservice, #addrental {
+	padding: 10px;
+	width: 49.75%;
+	display:inline-block;
+}
