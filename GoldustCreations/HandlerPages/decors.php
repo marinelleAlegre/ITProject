@@ -47,7 +47,7 @@ desired effect
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-
+      <?php include("../decorsdata.php") ?>
     </section>
     <!-- /.content -->
   </div>
