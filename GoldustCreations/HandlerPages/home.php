@@ -44,7 +44,6 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
-    <?php include("../calendar3.php") ?>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->

@@ -54,7 +54,7 @@ desired effect
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div class="jumbotron">
+              <div class="jumbotron row">
                 <h3>Balance: </h3> <h1>Php 50, 000</h1>
               </div>
               <table class="table table-bordered">
@@ -103,10 +103,17 @@ desired effect
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div class="jumbotron">
-                <h3>Remaining Budget:</h3>
-                <h1>Php 30, 000</h1>
+              <div class="jumbotron row">
+                <div class="col-md-6">                 
+                  <h3>Total Expenses:</h3>
+                  <h1>Php 30, 000</h1>  
+                </div>
+                <div class="col-md-6">
+                  <h3>Remaining Budget:</h3>
+                  <h1>Php 30, 000</h1>
+                </div>
               </div>
+              
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -138,9 +145,9 @@ desired effect
                 <li><a href="#">&raquo;</a></li>
               </ul>
             </div>
-              <div class="jumbotron">
-                <h3>Total Budget: Php 50, 000</h3>
-                <h3>Total Expenses: Php 100, 000</h3>
+              <div class="jumbotron row">
+                <h3>Over Budget: Php 50, 000</h3>
+                <h3>Total Budget: Php 100, 000</h3>
               </div>
           </div>
         </div>
