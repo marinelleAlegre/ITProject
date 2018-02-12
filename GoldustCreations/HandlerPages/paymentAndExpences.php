@@ -5,7 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <title>Handler | Payments And Expences</title>
+  <title>Handler | Payments And Expenses</title>
   <?php include("../head.php") ?>
 </head>
 <!--
