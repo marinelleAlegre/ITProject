@@ -54,6 +54,15 @@ desired effect
     <div class="box">
             <div class="box-header">
               <h3 class="box-title">Data Table With Full Features</h3>
+              <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- /.box-header -->
 
@@ -69,11 +78,12 @@ desired effect
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Trident</td>
+                  <td>1</td>
                   <td>Internet
                     Explorer 4.0
                   </td>
                   <td>Win 95+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -81,6 +91,7 @@ desired effect
                     Explorer 5.0
                   </td>
                   <td>Win 95+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -88,6 +99,7 @@ desired effect
                     Explorer 5.5
                   </td>
                   <td>Win 95+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -95,42 +107,43 @@ desired effect
                     Explorer 6
                   </td>
                   <td>Win 98+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
                   <td>Internet Explorer 7</td>
                   <td>Win XP SP2+</td>
-                  <td>7</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
                   <td>AOL browser (AOL desktop)</td>
                   <td>Win XP</td>
-                  <td>6</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 1.0</td>
                   <td>Win 98+ / OSX.2+</td>
-                  <td>1.7</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 1.5</td>
                   <td>Win 98+ / OSX.2+</td>
-                  <td>1.8</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 2.0</td>
                   <td>Win 98+ / OSX.2+</td>
-                  <td>1.8</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 3.0</td>
                   <td>Win 2k+ / OSX.3+</td>
-                  <td>1.9</td>
+                  <td>1/1/11</td>
                 </tr>
               </table>
               <table id="servicetable" class="table table-bordered table-striped" style="float: right">
@@ -149,6 +162,7 @@ desired effect
                     Explorer 4.0
                   </td>
                   <td>Win 95+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -156,6 +170,7 @@ desired effect
                     Explorer 5.0
                   </td>
                   <td>Win 95+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -163,6 +178,7 @@ desired effect
                     Explorer 5.5
                   </td>
                   <td>Win 95+</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
@@ -170,55 +186,55 @@ desired effect
                     Explorer 6
                   </td>
                   <td>Win 98+</td>
-                  <td>6</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
                   <td>Internet Explorer 7</td>
                   <td>Win XP SP2+</td>
-                  <td>7</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Trident</td>
                   <td>AOL browser (AOL desktop)</td>
                   <td>Win XP</td>
-                  <td>6</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 1.0</td>
                   <td>Win 98+ / OSX.2+</td>
-                  <td>1.7</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 1.5</td>
                   <td>Win 98+ / OSX.2+</td>
-                  <td>1.8</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 2.0</td>
                   <td>Win 98+ / OSX.2+</td>
-                  <td>1.8</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Firefox 3.0</td>
                   <td>Win 2k+ / OSX.3+</td>
-                  <td>1.9</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Camino 1.0</td>
                   <td>OSX.2+</td>
-                  <td>1.8</td>
+                  <td>1/1/11</td>
                 </tr>
                 <tr>
                   <td>Gecko</td>
                   <td>Camino 1.5</td>
                   <td>OSX.3+</td>
-                  <td>1.8</td>
+                  <td>1/1/11</td>
                 </tr>
               </table>
             </div>
