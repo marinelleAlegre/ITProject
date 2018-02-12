@@ -50,54 +50,82 @@ desired effect
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+              <table id="all-clients" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>EventID</th>
-                  <th>Event Name</th>
+                  <th>Client ID</th>
                   <th>Client Name</th>
-                  <th>Event Type</th>
-                  <th>Package Type</th>
-                  <th>Date and Time of Event</th>
-                  <th>Location</th>
-                  <th>Actions</th>
+                  <th>Registered Date</th>
                 </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>0002</td>
-                    <td>Emm-Reu Nuptial</td>
+                  <tr class="clickable-row" data-toggle="modal" data-target="#client-modal">
+                    <td>Client ID</td>
                     <td>Client Name</td>
-                    <td>Wedding</td>
-                    <td>Full Package</td>
-                    <td>December 18, 2017 at 1 PM</td>
-                    <td>Bakakeng</td>
-                    <td>
-                      <div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
-                    </td>
+                    <td>Client Name</td>
                   </tr>
                 </tbody>
-                <tfoot>
-                <tr>
-                  <th>EventID</th>
-                  <th>Event Name</th>
-                  <th>Client Name</th>
-                  <th>Event Type</th>
-                  <th>Package Type</th>
-                  <th>Date and Time of Event</th>
-                  <th>Location</th>
-                  <th>Actions</th>
-                </tr>
-                </tfoot>
               </table>
             </div>
             <!-- /.box-body -->
           </div>
-
-      <!--------------------------
-        | Your Page Content Here |
-        -------------------------->
-
+          <!-- modal -->
+          <div id="client-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Client Name</h4>
+                </div>
+                <div class="modal-body">
+                  <span><p>Client ID</p></span>
+                  <span><p>Contact Number</p></span>
+                  <span><p>Address</p></span>
+                  <span><p>Email</p></span>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="box">
+                        <div class="box-body">
+                          <table id="client-desc" class="table table-bordered table-hover">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Event/Rental Name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>ID</td>
+                                <td>Event/Rental Name</td>
+                                <td>Date</td>
+                                <td>Status</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="row">
+                    <div class="col-lg-4 col-xs-2">
+                      <button class="btn btn-primary">Edit</button>
+                    </div>
+                    <div class="col-lg-4 col-xs-5">
+                      <button class="btn btn-primary">Add Service</button>
+                    </div>
+                    <div class="col-lg-4 col-xs-3">
+                      <button class="btn btn-primary">Add Event</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
     <!-- /.content -->
   </div>
@@ -131,7 +159,7 @@ desired effect
 <!-- page script -->
 <script>
   $(function () {
-    $('#example1').DataTable()
+    $('#all-clients').DataTable()
     $('#example2').DataTable({
       'paging'      : true,
       'lengthChange': false,
