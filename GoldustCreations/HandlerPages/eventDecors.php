@@ -45,7 +45,9 @@ desired effect
     <!-- Main content -->
     <section class="content container-fluid">
       <?php include('../eventNav.php') ?>
+      <?php include('../decorsdata.php') ?>
     </section>    <!-- /.content -->
+
   </div>
   <!-- /.content-wrapper -->
 
