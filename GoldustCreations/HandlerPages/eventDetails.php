@@ -44,10 +44,9 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
-      <button type="button" class="btn btn-block btn-primary btn-lg"> Print Event Details
-      </button>
-      <?php include('../eventNav.php') ?>
-<div class="tab-content">
+      <button type="button" class="btn btn-block btn-primary btn-lg">Print Event Details</button>
+      <?php include("../eventNav.php") ?>
+      <div class="content">
         <div id="details" class="tab-pane">
           <form>
             <div class="row">
@@ -174,16 +173,7 @@ desired effect
           </form>
         </div>
        </div>
-    </section>
-    <!-- /.content -->
-
-    <section class="content container-fluid">
-      <div>
-        
-      </div>
-      <div>
-        
-      </div>      
+       
     </section>
   </div>
   <!-- /.content-wrapper -->
