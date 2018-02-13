@@ -43,11 +43,12 @@ desired effect
     </section>
     <!-- Main content -->
     <section class="content container-fluid">
+    <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Suits</a>
       <?php include("../itemSelectionNav.php"); ?>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-      <?php include("../suitsdata.php") ?>
+      <?php include("../suitsgallery.php") ?>
     </section>
     <!-- /.content -->
   </div>
