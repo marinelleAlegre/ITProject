@@ -28,7 +28,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
   <?php include("../header.php") ?>
   <?php include("../navbar.php") ?>
