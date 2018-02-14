@@ -44,35 +44,51 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
-      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
+    <?php include("../EmployeeNav.php") ?>
       <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>EventID</th>
-                  <th>Event Name</th>
-                  <th>Client Name</th>
-                  <th>Event Type</th>
-                  <th>Package Type</th>
-                  <th>Date and Time of Event</th>
-                  <th>Location</th>
-                  <th>Actions</th>
+                  <th>Employee ID</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Email</th>
+                  <th>Contact Number</th>
                 </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>0002</td>
-                    <td>Emm-Reu Nuptial</td>
-                    <td>Client Name</td>
-                    <td>Wedding</td>
-                    <td>Full Package</td>
-                    <td>December 18, 2017 at 1 PM</td>
-                    <td>Bakakeng</td>
+                    <td>1000</td>
+                    <td>Renz</td>
+                    <td>Km4 La Trinidad</td>
+                    <td>renz@yahoo.com</td>
+                    <td>09999999999</td>
+                    <td>
+                      <div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
+                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2000</td>
+                    <td>Kimmy</td>
+                    <td>Km4 La Trinidad</td>
+                    <td>kimmy@yahoo.com</td>
+                    <td>09854692892</td>
+                    <td>
+                      <div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
+                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5000</td>
+                    <td>MArz Tindaan</td>
+                    <td>Km4 La Trinidad</td>
+                    <td>marz@yahoo.com</td>
+                    <td>09912349956</td>
                     <td>
                       <div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
                       <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
