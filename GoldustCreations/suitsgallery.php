@@ -4,15 +4,7 @@
 
 </head>
 <style type="text/css">
-  body {
-  padding-top: 54px;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
+ 
  #img {
     width: 280px;
     height: 250px;
