@@ -44,6 +44,7 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
+      <button type="button" class="btn btn-block btn-primary btn-lg">Print Event Details</button>
       <?php include('../eventNav.php') ?>
       <div class="content">
         <div class="row">
