@@ -28,79 +28,54 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
   <?php include("../header.php") ?>
-  <?php include("../navbar.php") ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Payments And Expences
+        Payments And Expenses
       </h1>
     </section>
 
     <!-- Main content -->
     <section class="content container-fluid">
+      <button type="button" class="btn btn-block btn-primary btn-lg">Print Event Details</button>
       <?php include('../eventNav.php') ?>
-      <div>
+      <div class="content">
         <div class="row">
         <div class="col-md-6">
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Payments</h3>
+              <h1 class="box-title">Payments:</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <div class="jumbotron row">
+                <h3>Balance: </h3> <h1>Php 50, 000</h1>
+              </div>
               <table class="table table-bordered">
-                <tr>
-                  <th style="width: 10px">#</th>
-                  <th>Task</th>
-                  <th>Progress</th>
-                  <th style="width: 40px">Label</th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>Update software</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-red">55%</span></td>
-                </tr>
-                <tr>
-                  <td>2.</td>
-                  <td>Clean database</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-yellow">70%</span></td>
-                </tr>
-                <tr>
-                  <td>3.</td>
-                  <td>Cron job running</td>
-                  <td>
-                    <div class="progress progress-xs progress-striped active">
-                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-light-blue">30%</span></td>
-                </tr>
-                <tr>
-                  <td>4.</td>
-                  <td>Fix and squish bugs</td>
-                  <td>
-                    <div class="progress progress-xs progress-striped active">
-                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-green">90%</span></td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Payment ID</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td>001</td>
+                    <td>20, 000</td>
+                    <td>50, 000</td>
+                    <td>December 20, 2017</td>
+                    <td>1:00 PM</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <!-- /.box-body -->
@@ -113,62 +88,51 @@ desired effect
                 <li><a href="#">&raquo;</a></li>
               </ul>
             </div>
+
+            <div class="jumbotron">
+              <h3>Total Amount: Php 150, 000</h3>
+              <h3>Total Amount Paid: Php 100, 000</h3>
+            </div>
           </div>
-          <!-- /.box -->
-        
-          <div class="box ">
+
+        </div>
+        <div class="col-md-6">
+          <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Expenses</h3>
+              <h1 class="box-title">Expenses:</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <div class="jumbotron row">
+                <div class="col-md-6">                 
+                  <h3>Total Expenses:</h3>
+                  <h1>Php 30, 000</h1>  
+                </div>
+                <div class="col-md-6">
+                  <h3>Remaining Budget:</h3>
+                  <h1>Php 30, 000</h1>
+                </div>
+              </div>
+              
               <table class="table table-bordered">
-                <tr>
-                  <th style="width: 10px">#</th>
-                  <th>Task</th>
-                  <th>Progress</th>
-                  <th style="width: 40px">Label</th>
-                </tr>
-                <tr>
-                  <td>1.</td>
-                  <td>Update software</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-red">55%</span></td>
-                </tr>
-                <tr>
-                  <td>2.</td>
-                  <td>Clean database</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-yellow">70%</span></td>
-                </tr>
-                <tr>
-                  <td>3.</td>
-                  <td>Cron job running</td>
-                  <td>
-                    <div class="progress progress-xs progress-striped active">
-                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-light-blue">30%</span></td>
-                </tr>
-                <tr>
-                  <td>4.</td>
-                  <td>Fix and squish bugs</td>
-                  <td>
-                    <div class="progress progress-xs progress-striped active">
-                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-green">90%</span></td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Expenses ID</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Proof</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>001</td>
+                    <td>20, 000</td>
+                    <td>Flowers</td>
+                    <td>December 20, 2017</td>
+                    <td><a href="#" data-toggle="modal" data-target="#modal-photo">View</a></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <!-- /.box-body -->
@@ -181,13 +145,14 @@ desired effect
                 <li><a href="#">&raquo;</a></li>
               </ul>
             </div>
+              <div class="jumbotron row">
+                <h3>Over Budget: Php 50, 000</h3>
+                <h3>Total Budget: Php 100, 000</h3>
+              </div>
           </div>
-          <!-- /.box -->
-
-
+        </div>
       </div>
     </div>
-  </div>
     </section>
     <!-- /.content -->
   </div>
@@ -198,6 +163,26 @@ desired effect
   <!-- Add the sidebar's background. This div must be placed
   immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
+</div>
+<div class="modal modal-default fade" id="modal-photo">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Design Name Here</h4> 
+      </div>
+      <div class="modal-body">
+        <img src="sly2.jpg" alt="photo">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+        <a href="gowns.php"><button type="button" class="btn btn-primary">Change</button></a>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+<!-- /.modal-dialog -->
 </div>
 <!-- ./wrapper -->
 

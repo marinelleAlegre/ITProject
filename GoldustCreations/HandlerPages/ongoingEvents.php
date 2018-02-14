@@ -28,23 +28,22 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
   <?php include("../header.php") ?>
-  <?php include("../navbar.php") ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1 class="pull-left">
+      <h1>
         Ongoing Events
       </h1>
     </section>
 
     <!-- Main content -->
     <section class="content container-fluid">
-      <button type="button" class="btn btn-block btn-primary btn-lg">Add Event</button>
+      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
       <div class="box">
             <div class="box-header">
               <h3 class="box-title">Data Table With Full Features</h3>

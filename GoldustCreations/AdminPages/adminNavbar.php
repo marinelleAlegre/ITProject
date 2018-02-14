@@ -43,7 +43,16 @@
 
         </li>
         <li>
+          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Transactions</span></a>
+        </li>
+        <li>
+          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Employees</span></a>
+        </li>
+        <li>
           <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
+        </li>
+        <li>
+          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Decors And Design</span></a>
         </li>
         <!--
         <li class="treeview">

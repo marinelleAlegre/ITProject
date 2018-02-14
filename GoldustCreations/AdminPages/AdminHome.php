@@ -28,9 +28,10 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-  <?php include("../header.php") ?>
+  <?php include("adminHeader.php") ?>
+  <?php include("adminNavbar.php") ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
