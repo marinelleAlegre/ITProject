@@ -5,7 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <title>Handler | Payments And Expences</title>
+  <title>Handler | Payments And Expenses</title>
   <?php include("../head.php") ?>
 </head>
 <!--
@@ -38,7 +38,7 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Payments And Expences
+        Payments And Expenses
       </h1>
     </section>
 
@@ -68,7 +68,7 @@ desired effect
                     <th>Time</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody> 
                   <tr>
                     <td>001</td>
                     <td>20, 000</td>

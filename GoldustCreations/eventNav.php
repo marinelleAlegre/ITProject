@@ -18,7 +18,7 @@
               <li><a href="eventDetails.php">Details</a></li>
               <li><a href="eventEntourage.php">Entourage</a></li>
               <li><a href="eventDecors.php">Decors</a></li>
-              <li><a href="paymentAndExpences.php">Payment and Expences</a></li>
+              <li><a href="paymentAndExpences.php">Payment and Expenses</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
