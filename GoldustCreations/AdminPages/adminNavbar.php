@@ -23,36 +23,36 @@
         <li class="header"></li>
         <!-- Optionally, you can add icons to the links -->
         <li>
-          <a href="home.php"><i class="glyphicon glyphicon-home"></i> <span>Home</span></a>
+          <a href="adminHome.php"><i class="glyphicon glyphicon-home"></i> <span>Home</span></a>
         </li>
         <li class="active treeview">
           <a><i class="glyphicon glyphicon-user"></i> <span>Events</span></a>
 
           <ul class="treeview-menu">
             <li>
-              <a href="ongoingEvents.php"><i class=""></i>Ongoing Events</a>
+              <a href="adminOnGoingEvents.php"><i class=""></i>Ongoing Events</a>
             </li>
             <li>
-              <a href="finishedEvents.php"><i class=""></i>Finished Events</a>
+              <a href="adminFinishedEvents.php"><i class=""></i>Finished Events</a>
             </li>
             <li>
-              <a href="canceledEvents.php"><i class=""></i>Canceled Events</a>
+              <a href="adminCanceledEvents.php"><i class=""></i>Canceled Events</a>
             </li>
-            
+            <li>
           </ul>
 
         </li>
         <li>
-          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Transactions</span></a>
+          <a href="adminTransacMonitor.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Transactions</span></a>
         </li>
         <li>
-          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Employees</span></a>
+          <a href="adminEmployees.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Employees</span></a>
         </li>
         <li>
-          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
+          <a href="adminServices.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
         </li>
         <li>
-          <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Decors And Design</span></a>
+          <a href="adminGowns.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Decors And Design</span></a>
         </li>
         <!--
         <li class="treeview">
