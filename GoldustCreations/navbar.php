@@ -45,9 +45,6 @@
         <li>
           <a href="services.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
         </li>
-        <li>
-          <a href="clients.php"><i class="glyphicon glyphicon-leaf"></i> <span>Clients</span></a>
-        </li>
         <!--
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
