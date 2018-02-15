@@ -40,35 +40,29 @@ desired effect
      <h1>
         Services
       </h1>
-
-      <div class="fixed-bottom1">
-        <button type="button" class="btn btn-block btn-default btn-lg" id="addrental">Add Rental</button>
-        <button type="button" class="btn btn-block btn-default btn-lg" id="addservice">Add Service</button>  
-      </div>
     </section>
 
     <!-- Main content -->
     <section class="content container-fluid">
       <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#" class="btn btn-block btn-primary btn-lg">Add Rentals</a>  
+          </div>
+          <div class="col-md-6">
+            <a href="#" class="btn btn-block btn-primary btn-lg">Add Service Transaction</a>
+          </div>
+        </div>
          <div class="row">
           <div class="col-md-6"> 
             <div class="box">
                 <div class="box-header">
                   <h3 class="box-title">Data Table With Full Features</h3>
-                  <div class="box-tools">
-                    <div class="input-group input-group-sm">
-                      <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-
-                      <div class="input-group-btn">
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <!-- /.box-header -->
 
                 <div class="box-body">
-                  <table class="table table-bordered table-striped">
+                  <table id="rentalTable" class="table table-bordered table-striped">
                     <thead>
                     <tr>
                       <th>Service ID</th>
@@ -88,20 +82,11 @@ desired effect
               <div class="box">
                 <div class="box-header">
                   <h3 class="box-title">Data Table With Full Features</h3>
-                  <div class="box-tools">
-                    <div class="input-group input-group-sm">
-                      <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-
-                      <div class="input-group-btn">
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <!-- /.box-header -->
 
                 <div class="box-body">
-                  <table class="table table-bordered table-striped">
+                  <table id="serviceTable" class="table table-bordered table-striped">
                     <thead>
                     <tr>
                       <th>Service ID</th>
@@ -151,14 +136,14 @@ desired effect
 <!-- page script -->
 <script>
   $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
+    $('#rentalTable').DataTable()
+    $('#serviceTable').DataTable({
       'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
+      'lengthChange': true,
+      'searching'   : true,
       'ordering'    : true,
       'info'        : true,
-      'autoWidth'   : false
+      'autoWidth'   : true
     })
   })
 </script>
