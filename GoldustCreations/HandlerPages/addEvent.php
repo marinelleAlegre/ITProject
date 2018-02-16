@@ -106,9 +106,12 @@ desired effect
                 </div>
               </div>
             </div>
+            
+            <!-- Services -->
             <div class="row">
               <div class="table-responsive col-lg-6">
                 <table id="" class="table table-striped table-bordered">
+                  <h4>Services</h4>
                   <thead>
                     <tr>
                       <th>Services</th>
@@ -125,8 +128,8 @@ desired effect
                           </div>
                         </form>
                       </td>
-                      <td>12</td>
-                      <td>35000</td>
+                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
+                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                     </tr>
                     <td>
                       <form>
@@ -135,13 +138,14 @@ desired effect
                         </div>
                       </form>
                     </td> 
-                    <td><input type="text" id=""></td>
-                    <td><input type="text" name=""></td> 
+                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td> 
                   </tbody>
                 </table>
               </div>
               <div class="table-responsive col-lg-6">
                 <table id="staff" class="table table-striped table-bordered">
+                  <h4>Staff</h4>
                   <thead>
                     <tr>
                       <th>Name</th>
@@ -151,13 +155,13 @@ desired effect
                       <th>Action</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="staff-body" onclick="clicked_id(this.id)">
                     <tr>
                       <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                       <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                       <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                       <td>Available</td>
-                      <td><a data-toggle="modal" data-target="#edit-staff"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                      <td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;" onclick="rmvrow(this)"></span></a><a data-toggle="modal" data-target="#edit-staff"><span class="glyphicon glyphicon-pencil" style="margin: 2px;"></span></a></td>
 
                       <!-- edit staff modal -->
                       <div id="edit-staff" class="modal fade" role="dialog">
@@ -180,6 +184,7 @@ desired effect
                                     <div class="form-group">
                                       <label>Role</label>
                                       <!-- combobox intended here.... -->
+                                      <input type="text" id="staff-role" class="form-control">
                                     </div>
                                   </div>
                                 </div>
@@ -220,14 +225,7 @@ desired effect
                 </table>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-1 col-lg-offset-10">
-                <button type="submit" class="btn btn-success">Save</button>
-              </div>
-              <div class="col-lg-1">
-                <button type="reset" class="btn btn-danger">Reset</button>
-              </div>
-            </div>
+            
           </form>       
 
           <!-- Entourage Design -->
@@ -242,9 +240,10 @@ desired effect
                     <th>Design Name</th>
                     <th>Quantity</th>
                     <th>Photo</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="ent-designs-body" onclick="clicked_id(this.id)">
                   <tr>
                     <td>
                       <input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">
@@ -253,11 +252,30 @@ desired effect
                       <input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">
                     </td>
                     <td><input type="file" id="design-pic" accept="image/*"></td>
+                    <td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;" onclick="rmvrow(this)"></span></a></td>
                   </tr>
+                  
+                  <script type="text/javascript">
+                    // add new row on button click... 
+                    function add_entdesign(){
+                      var table = document.getElementById("ent-designs-body");
+                      var row = table.insertRow(-1);
+
+                      var td1 = row.insertCell(0);
+                      var td2 = row.insertCell(1);
+                      var td3 = row.insertCell(2);
+                      var td4 = row.insertCell(3);
+
+                      td1.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">');
+                      td2.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">');
+                      td3.innerHTML = ('<input type="file" id="design-pic" accept="image/*">');
+                      td4.innerHTML = ('<a><span class="glyphicon glyphicon-remove"></span></a>');
+                    }
+                  </script>
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td><button type="button" class="btn btn-primary">Add Design</button></td>
+                    <td><button type="button" class="btn btn-primary" id="add-entdesign-btn" onclick="add_entdesign()">Add Design</button></td>
                   </tr>
                 </tfoot>
               </table>
@@ -288,26 +306,62 @@ desired effect
                     <th>Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="ent-body" onclick="clicked_id(this.id)">
                   <tr>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Name"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Role"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Shoulder"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Chest"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Stomach"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Waist"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Arm Length"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Arm Hole"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Muscle"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Pants Length"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Baston"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
+                    <td><input class="form-control" type="text" id="" style="border: none;"></td>
                     <td><input type="file" id="design-pic" accept="image/*"></td>
-                    <td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;"></span></a><a><span class="glyphicon glyphicon-pencil" style="margin: 2px;"></span></a></td>
+                    <!--<td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;"></span></a><a><span class="glyphicon glyphicon-pencil" style="margin: 2px;"></span></a></td>-->
+                    <td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;" onclick="rmvrow(this)"></span></a></td>
+                    <!-- add new row on button click... -->
+                    <script type="text/javascript">
+                      function add_ent(){
+                        var table = document.getElementById("ent-body");
+                        var row = table.insertRow(-1);
+
+                        var td1 = row.insertCell(0);
+                        var td2 = row.insertCell(1);
+                        var td3 = row.insertCell(2);
+                        var td4 = row.insertCell(3);
+                        var td5 = row.insertCell(4);
+                        var td6 = row.insertCell(5);
+                        var td7 = row.insertCell(6);
+                        var td8 = row.insertCell(7);
+                        var td9 = row.insertCell(8);
+                        var td10 = row.insertCell(9);
+                        var td11 = row.insertCell(10);
+                        var td12 = row.insertCell(11);
+                        var td13 = row.insertCell(12);
+
+                        td1.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td2.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td3.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td4.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td5.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td6.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td7.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td8.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td9.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td10.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td11.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;">');
+                        td12.innerHTML = ('<input type="file" id="design-pic" accept="image/*">');
+                        td13.innerHTML = ('<a><span class="glyphicon glyphicon-remove" style="margin: 2px;"></span></a>');
+                      }
+                    </script>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td><button type="button" class="btn btn-primary">Add Entourage</button></td>
+                    <td><button type="button" class="btn btn-primary" onclick="add_ent()">Add Entourage</button></td>
                   </tr>
                 </tfoot>
               </table>
@@ -320,32 +374,59 @@ desired effect
               <h3 class="box-title">Decors</h3>
             </div>
             <div class="box-body table-responsive">
-              <table id="ent" class="table table-bordered table-striped">
+              <table id="decor" class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>Event Name</th>
                     <th>Equipment Name</th>
                     <th>Quantity</th>
                     <th>Photo</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="decor-body" onclick="clicked_id(this.id)">
                   <tr>
                     <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                     <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                     <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
                     <td><input type="file" id="design-pic" accept="image/*"></td>
+                    <td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;" onclick="rmvrow(this)"></span></a></td>
                   </tr>
+                  <script type="text/javascript">
+                    function add_decor(){
+                      var table = document.getElementById("decor-body");
+                      var row = table.insertRow(-1);
+
+                      var td1 = row.insertCell(0);
+                      var td2 = row.insertCell(1);
+                      var td3 = row.insertCell(2);
+                      var td4 = row.insertCell(3);
+                      var td5 = row.insertCell(4);
+
+                      td1.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">');
+                      td2.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">');
+                      td3.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">');
+                      td4.innerHTML = ('<input type="file" id="design-pic" accept="image/*">');
+                      td5.innerHTML = ('<a><span class="glyphicon glyphicon-remove" style="margin: 2px;"></span></a>');
+                    }
+                  </script>
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td><button type="button" class="btn btn-primary">Add Decoration</button></td>
+                    <td><button type="button" class="btn btn-primary" onclick="add_decor()">Add Decoration</button></td>
                   </tr>
                 </tfoot>
               </table>
             </div>
           </div>
-      
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-10">
+              <button type="submit" class="btn btn-success">Save</button>
+            </div>
+            <div class="col-lg-1">
+              <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+          </div>        
     </section>
     <!-- /.content -->
   </div>
@@ -367,6 +448,18 @@ desired effect
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
+
+<!-- remove row from table -->
+<script type="text/javascript">
+  var click_tbl_id = 0;
+  function clicked_id(tbl_id){
+    click_tbl_id = tbl_id;
+  }
+
+  function rmvrow(i){
+    document.getElementById(click_tbl_id).deleteRow(i.rowIndex);
+  }
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
