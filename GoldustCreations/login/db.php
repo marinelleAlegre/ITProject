@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "goldust");
+$con = new mysqli("localhost", "root", "adawd", "gc");
 
 //Check connection
 if (mysqli_connect_errno()) {
