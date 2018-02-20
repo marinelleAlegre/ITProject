@@ -8,6 +8,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>Handler | Home</title>
   <?php include("../head.php") ?>
 </head>
+<style type="text/css">
+#box1 {
+  float:right;
+}
+</style>
 <!--
 BODY TAG OPTIONS:
 =================
@@ -33,19 +38,24 @@ desired effect
   <?php include("../header.php") ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
       <h1>
         Home
       </h1>
-    </section>
+      </section>
 
-    <!-- Main content -->
-    <section class="content container-fluid">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="small-box bg-red">
+      <!-- Main content -->
+      <section class="content container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+
+            <div class="box">
+              <!-- /.box-header -->
+              <div class="box-body">
+<!-- dito -->
+<div class="small-box bg-red">
             <div class="inner">
               <h3>10</h3>
               <p>New Events</p>
@@ -74,14 +84,18 @@ desired effect
               </div>
               <a href="#" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </div>
-          </div>
-        </div>
+       </div>
+</div>
+</div>
+</div>
+            <!-- /.box-body -->
+          <!-- /.box -->
+        <div class="col-md-6" id="box1">
 
-
-      </div>
-        <!-- TO DO List -->
-          <div class="box box-primary">
-            <div class="box-header">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+<!-- dito -->
               <i class="ion ion-clipboard"></i>
 
               <h3 class="box-title">To Do List</h3>
@@ -186,21 +200,21 @@ desired effect
               </ul>
             </div>
             <!-- /.box-body -->
-            <div class="box-footer clearfix no-border">
-              <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
-            </div>
           </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+            </div>
+            </section>
+          <!-- /.box -->
 
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
 
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
   <?php include("../footer.php") ?>
+
 
   <!-- Add the sidebar's background. This div must be placed
   immediately after the control sidebar -->
