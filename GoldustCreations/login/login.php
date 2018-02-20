@@ -25,8 +25,8 @@
 		if (isset($_POST['username'])) {
 			$username = stripslashes($_REQUEST['username']); //removes backslashes
 			$username = mysqli_real_escape_string($con, $username); //escaped special characters in a string
-			$password = stripslashes($_REQUEST['password']);
-			$password = mysqli_real_escape_string($con, $username);
+			$password = stripslashes($_REQUEST['pass']);
+			$password = mysqli_real_escape_string($con, $password);
 
 		//Checking if the user exists in the database or not
 			$query = "SELECT * FROM 'employees' WHERE username='$username' AND password='$password'";
@@ -34,7 +34,7 @@
 			$rows = mysqli_num_rows($result);
 			if ($rows == 1) {
 				$_SESSION['username'] = $username;
-				header("Location: ../handlerspage/home.php"); //Redirect user to the home page
+				header("Location: ../handlerpages/home.php"); //Redirect user to the home page
 			} else {
 				echo "<div class='form'><h3>Username/password is incorrect.</h3>
                 <br/>Click here to <a href='login.php'>Login</a></div>";
