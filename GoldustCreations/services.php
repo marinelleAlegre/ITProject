@@ -122,7 +122,7 @@
         			  </td>
                     </tr>
 
-                    <!--
+                <!--
                     <tr>
                         <div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
                         <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
