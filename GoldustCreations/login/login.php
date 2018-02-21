@@ -29,17 +29,23 @@
         $password = mysqli_real_escape_string($con,$password);
         
     //Checking is user existing in the database or not
-       $query = "SELECT * FROM `employees` WHERE username='$username' AND password='$password'";
-            $result = mysqli_query($con, $query) or die(mysql_error());
-            $rows = mysqli_num_rows($result);
-        if($rows == 1){
-            $_SESSION['username'] = $username;
-            header("Location: ../handlerpages/home.php"); // Redirect user to index.php
-            }else{
-                echo "<div class='form'><h3>Username/password is incorrect.</h3>
+       $query1 = "SELECT * FROM `employees` WHERE username='$username' AND password='$password' AND role='admin'";
+       $adminResult = mysqli_query($con, $query1) or die(mysql_error());
+       $adminLogin = mysqli_num_rows($adminResult);
+       $query2 = "SELECT * FROM `employees` WHERE username='$username' AND password='$password' AND role='handler'";
+       $handlerResult = mysqli_query($con, $query2) or die(mysql_error());
+       $handlerLogin = mysqli_num_rows($handlerResult);
+       if($adminLogin == 1){
+       		$_SESSION['username'] = $username;
+       		header("Location: ../adminpages/adminhome.php");
+       } else if ($handlerLogin == 1) {
+       		$_SESSION['username'] = $username;
+       		header("Location: ../handlerpages/home.php");
+       } else {
+       		echo "<div class='form'><h3>Username/password is incorrect.</h3>
                 <br/>Click here to <a href='login1.php'>Login</a></div>";
-                }
-		} else {
+       }
+	} else {
 
 	?>
 	<div class="limiter">
