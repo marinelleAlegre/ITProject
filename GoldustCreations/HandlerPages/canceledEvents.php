@@ -75,8 +75,27 @@ desired effect
                   <td>Full Package</td>
                   <td>November 2, 2017 at 10 AM</td>
                   <td>Bagui City</td>
-                  <td><div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
+                  <td><div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#reactivate"><i class="fa fa-fw fa-check"></i></a></div>
                       <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div></td>
+
+                      <!-- modal -->
+                      <div id="reactivate" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title">Reactivate</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>Undo cancellation of this event?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="submit" class="btn btn-success">Yes</button>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </tr>
                 </tbody>
               </table>

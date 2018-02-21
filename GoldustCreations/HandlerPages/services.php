@@ -47,10 +47,105 @@ desired effect
       <div class="content">
         <div class="row">
           <div class="col-md-6">
-            <a href="#" class="btn btn-block btn-primary btn-lg">Add Rentals</a>  
+            <button class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#add-rental">Add Rentals</button>  
           </div>
+
+          <!-- add rental modal -->
+          <div id="add-rental" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Add New Rental</h4>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <span class="form-group">
+                      <label>Client Name</label>
+                      <input type="text" id="c-name" class="form-control">
+                    </span>
+
+                    <span class="form-group">
+                      <label>Contact Number</label>
+                      <input type="text" id="contact-number" class="form-control">
+                    </span>
+
+                    <span class="form-group">
+                      <label>Date Rented</label>
+                      <input type="date" id="date-rented" class="form-control">
+                    </span>
+
+                    <span class="form-group">
+                      <label>Date Due</label>
+                      <input type="date" id="date-due" class="form-control">
+                    </span>
+
+                    <div class="modal-footer">
+                       <div class="col-md-2 col-md-offset-8">
+                          <button type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                        <div class="col-md-2">
+                          <button type="submit" class="btn btn-success">Confirm</button>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-6">
-            <a href="#" class="btn btn-block btn-primary btn-lg">Add Service Transaction</a>
+            <button class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#add-svc-tn">Add New Service Transaction</button> 
+          </div>
+
+          <!-- add service transaction modal -->
+          <div id="add-svc-tn" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">Add New Service Transaction</h4>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <span class="form-group">
+                      <label>Client Name</label>
+                      <input type="text" id="c-name" class="form-control">
+                    </span>
+
+                    <span class="form-group">
+                      <label>Contact Number</label>
+                      <input type="text" id="contact-number" class="form-control">
+                    </span>
+
+                    <span class="form-group">
+                      <label>Date</label>
+                      <input type="date" id="date-rented" class="form-control">
+                    </span>
+
+                    <div class="form-group">
+                      <label>Service</label>
+                      <select name="services" class="form-control" id="sel-servc">
+                        <option value="make-up">Make-up</option>
+                        <option value="attire-rental">Attire Rental</option>
+                        <option value="photography">Photography</option>
+                        <option value="video-coverage">Video Coverage</option>
+                      </select>
+
+                    </div>
+
+                    <div class="modal-footer">
+                       <div class="col-md-2 col-md-offset-8">
+                          <button type="reset" class="btn btn-danger">Reset</button>
+                        </div>
+                        <div class="col-md-2">
+                          <button type="submit" class="btn btn-success">Confirm</button>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
          <div class="row">

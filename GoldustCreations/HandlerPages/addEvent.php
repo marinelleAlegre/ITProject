@@ -199,34 +199,19 @@ desired effect
                       </div>
                     </tr>
                   </tbody>
+                  <tfoot>
+                    <tr>
                       <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-staff">Add Staff</button></td>
                       
                       <!-- add staff modal -->
-                      <div id="add-staff" class="modal fade" role="dialog">
+                      <div id="add-staff" class="modal fade">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
                               <h4 class="modal-title">Add Staff</h4>
                             </div>
                             <div class="modal-body">
-                              <form>
-                                <div class="row">
-                                  <div class="col-lg-7">
-                                    <div class="form-group">
-                                      <label>Staff Name</label>
-                                      <input type="text" id="staff-name" class="form-control">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-5">
-                                    <div class="form-group">
-                                      <label>Role</label>
-                                      <!-- combobox intended here.... -->
-                                      <input type="text" id="staff-role" class="form-control">
-                                    </div>
-                                  </div>
-                                </div>
-                              </form>
+                              
                             </div>
                             <div class="modal-footer">
                               <button type="submit" class="btn btn-success">Confirm</button>
@@ -235,6 +220,8 @@ desired effect
                           </div>
                         </div>
                       </div>
+                    </tr>
+                  </tfoot>
                 </table>
               </div>
             </div>
@@ -407,6 +394,7 @@ desired effect
                   </tr>
                   <script type="text/javascript">
                     function add_decor(){
+                      
                       var table = document.getElementById("decor-body");
                       var row = table.insertRow(-1);
 
@@ -421,6 +409,69 @@ desired effect
                       td3.innerHTML = ('<input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here">');
                       td4.innerHTML = ('<input type="file" id="design-pic" accept="image/*">');
                       td5.innerHTML = ('<a><span class="glyphicon glyphicon-remove" style="margin: 2px;"></span></a>');
+                      
+                      /*
+                      var rowcount = document.getElementById("decor-body").rows.length;
+                      var tr_element = document.createElement("tr"); // create tr element
+
+                      // td1
+                      var td1 = document.createElement("td"); // create td element
+                      td1 = document.createElement("input"); // create input element
+                      var attrib1 = document.createAttribute("class"); // create class attribute
+                      attrib1.value = "form-control"; // assign value to attribute
+                      td1.setAttributeNode(attrib1); // set attribute to element
+                      var attrib2 = document.createAttribute("type");
+                      attrib2.value = "text";
+                      td1.setAttributeNode(attrib2);
+                      var attrib3 = document.createAttribute("style");
+                      attrib3.value = "border: none;";
+                      td1.setAttributeNode(attrib3);
+                      var attrib4 = document.createAttribute("placeholder");
+                      attrib4.value = "Insert text here";
+                      td1.setAttributeNode(attrib4);
+                      tr_element.appendChild(td1); // append new element to existing element
+
+                      // td2
+                      var td2 = document.createElement("td"); // create td element
+                      td2 = document.createElement("input"); // create input element
+                      td2.setAttributeNode(attrib1); // set attribute to element
+                      td2.setAttributeNode(attrib2);
+                      td2.setAttributeNode(attrib3);
+                      td2.setAttributeNode(attrib4);
+                      tr_element.appendChild(td2); // append new element to existing element
+
+                      // td3
+                      var td3 = document.createElement("td"); // create td element
+                      td3 = document.createElement("input"); // create input element
+                      td3.setAttributeNode(attrib1); // set attribute to element
+                      td3.setAttributeNode(attrib2);
+                      td3.setAttributeNode(attrib3);
+                      td3.setAttributeNode(attrib4);
+                      tr_element.appendChild(td3); // append new element to existing element
+
+                      // td4
+                      var td4 = document.createElement("td");
+                      td4 = document.createElement("input");
+                      var attrib5 = document.createAttribute("type");
+                      attrib5.value = "file";
+                      td4.setAttributeNode(attrib5);
+                      var attrib6 = document.createAttribute("accept");
+                      attrib6.value = "image/*";
+                      td4.setAttributeNode(attrib6);
+                      var td4_sub1 = document.createElement("a");
+                      var td4_sub2 = document.createElement("span");
+                      var attrib7 = document.createAttribute("class");
+                      attrib7.value = "glyphicon glyphicon-remove";
+                      td4_sub2.setAttributeNode(attrib7);
+                      var attrib8 = document.createAttribute("style");
+                      attrib8.value = "margin: 2px;";
+                      td4_sub2.setAttributeNode(attrib8);
+                      td4_sub1.appendChild(td4_sub2);
+                      td4.appendChild(td4_sub1);
+                      tr_element.appendChild(td4);
+
+                      document.getElementById("decor-body").appendChild(tr_element);
+                      */
                     }
                   </script>
                 </tbody>
@@ -464,14 +515,21 @@ desired effect
 
 <!-- remove row from table -->
 <script type="text/javascript">
-  var click_tbl_id = 0;
+  
+  var click_tbl_id = "";
   function clicked_id(tbl_id){
     click_tbl_id = tbl_id;
   }
-
-  function rmvrow(i){
-    document.getElementById(click_tbl_id).deleteRow(i.rowIndex);
+  /*
+    function rmvrow(i){
+    document.getElementById(click_tbl_id).deleteRow(click_tbl_id[i].rowIndex);
   }
+  */
+  function rmvrow(row){
+    var i = row.parentNode.parentNode.parentNode.rowIndex;
+    document.getElementById(click_tbl_id).deleteRow(i);
+  }
+  
 </script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
