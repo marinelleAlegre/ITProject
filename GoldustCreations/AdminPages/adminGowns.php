@@ -64,7 +64,51 @@ desired effect
     </section>
     <!-- Main content -->
     <section class="content container-fluid">
-    <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Gowns</a>
+
+    <a href="addGowns.php" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#addGowns">Add Gowns</a>
+  <!-- Modal -->
+  <div class="modal fade" id="addGowns" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upload Photo</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <div class="col-lg-7">
+                      <div class="form-group">
+                          <label>Name</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              <div class="col-lg-5">
+                      <div class="form-group">
+                          <label>Color</label>
+          <!-- combobox intended here.... -->
+                          <input type="text" id="staff-role" class="form-control">
+                      </div>
+              </div>
+              <div class="col-lg-5">      
+                  <button onclick="myFunction()"> Upload Photo </button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- end of modal -->
       <?php include("adminItemNavigation.php"); ?>
           
       <div class="container" id="con">
@@ -165,5 +209,13 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
+<!-- add photo -->
+<script>
+function myFunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "file");
+    document.body.appendChild(x);
+}
+</script>
 </body>
 </html>

@@ -199,19 +199,34 @@ desired effect
                       </div>
                     </tr>
                   </tbody>
-                  <tfoot>
-                    <tr>
                       <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-staff">Add Staff</button></td>
                       
                       <!-- add staff modal -->
-                      <div id="add-staff" class="modal fade">
+                      <div id="add-staff" class="modal fade" role="dialog">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
                               <h4 class="modal-title">Add Staff</h4>
                             </div>
                             <div class="modal-body">
-                              
+                              <form>
+                                <div class="row">
+                                  <div class="col-lg-7">
+                                    <div class="form-group">
+                                      <label>Staff Name</label>
+                                      <input type="text" id="staff-name" class="form-control">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5">
+                                    <div class="form-group">
+                                      <label>Role</label>
+                                      <!-- combobox intended here.... -->
+                                      <input type="text" id="staff-role" class="form-control">
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
                             </div>
                             <div class="modal-footer">
                               <button type="submit" class="btn btn-success">Confirm</button>
@@ -220,8 +235,6 @@ desired effect
                           </div>
                         </div>
                       </div>
-                    </tr>
-                  </tfoot>
                 </table>
               </div>
             </div>

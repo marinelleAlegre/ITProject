@@ -96,7 +96,6 @@ desired effect
             <!-- /.box-header -->
             <div class="box-body">
 <!-- dito -->
-              <i class="ion ion-clipboard"></i>
 
               <h3 class="box-title">To Do List</h3>
 
@@ -203,6 +202,7 @@ desired effect
           </div>
             </div>
             <!-- /.box-body -->
+
           </div>
           <!-- /.box -->
             </div>
@@ -212,7 +212,6 @@ desired effect
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-
   <?php include("../footer.php") ?>
 
 
