@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -63,7 +64,51 @@ desired effect
     </section>
     <!-- Main content -->
     <section class="content container-fluid">
-    <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Suits</a>
+    <a href="addSuits.php" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#addsuits">Add Suits</a>
+
+    <!-- Modal -->
+      <div class="modal fade" id="addsuits" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Upload Photo</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <div class="col-lg-7">
+                      <div class="form-group">
+                          <label>Name</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              <div class="col-lg-5">
+                      <div class="form-group">
+                          <label>Color</label>
+          <!-- combobox intended here.... -->
+                          <input type="text" id="staff-role" class="form-control">
+                      </div>
+              </div>
+              <div class="col-lg-5">      
+                  <button onclick="myFunction()"> Upload Photo </button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- end of modal -->
       <?php include("adminItemNavigation.php"); ?>
       <!--------------------------
         | Your Page Content Here |
