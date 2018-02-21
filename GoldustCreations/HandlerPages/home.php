@@ -47,6 +47,10 @@ desired effect
       </section>
 
       <!-- Main content -->
+
+      <!-- php code to connect to database -->
+      <?php?>
+
       <section class="content container-fluid">
         <div class="row">
           <div class="col-md-6">
@@ -55,24 +59,37 @@ desired effect
               <!-- /.box-header -->
               <div class="box-body">
 <!-- dito -->
-<div class="small-box bg-red">
-            <div class="inner">
-              <h3>10</h3>
-              <p>New Events</p>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
+            <div class="small-box bg-red">
+              <div class="inner">
+                <h3>10</h3>
+                <p>New Events</p>
+                <div class="icon">
+                  <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
               </div>
-              <a href="#" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </div>
-          </div>
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>10</h3>
+              <?php
+              $servername = "localhost";
+              $username = "root";
+              $pwd = "";
+              $dbname = "goldust";
+
+              // connect to db
+              $conn = new mysqli($servername, $username, $pwd, $dbname);
+
+              $query1 = "SELECT COUNT(*) as 'count' FROM events WHERE eventStatus LIKE 'on%going';";
+              $result1 = $conn->query($query1);
+              $row = $result1->fetch_assoc();
+              echo '<h3>' . $row["count"] . '</h3>';
+              ?>
               <p>Ongoing Events</p>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="home-ongoingEvents.php" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <div class="small-box bg-green">
