@@ -99,7 +99,37 @@ desired effect
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
+          <!-- Modal -->
+  <div class="modal fade" id="save" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ALERT</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <p>Are you sure you want to save this?</p>
+              <div class="col-lg-5">
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- end of modal -->
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
       </div>
