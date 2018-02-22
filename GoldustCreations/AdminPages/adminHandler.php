@@ -13,6 +13,39 @@ scratch. This page gets rid of all links and provides the needed markup only.
     padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
+
+  span.label1 {
+    margin-left: 10px;
+  }
+
+  p.label2{
+    font-weight: : bold;
+  }
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0073e6;
+    color: white;
+}
+#respass {
+    align-content: left;
+}
 </style>
 <!--
 BODY TAG OPTIONS:
@@ -204,7 +237,189 @@ desired effect
                     <td>09999999999</td>
                     <td>
                       <div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
-                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
+                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"  data-toggle="modal" data-target="#info" ><i class="fa fa-fw fa-info" ></i></a></div>
+                      <!-- Modal -->
+              <div class="modal fade" id="info" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Jayson Caliway</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                          <div class="row" id="row1">
+                              <div class="col-lg-7" id="row1">
+                                  <div class="form-group" id="row1">
+                                      <p  class="label2">Employee ID: <span class="label1" >0001</span></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row" id="row1">
+                              <div class="col-lg-7" id="row1">
+                                      <div class="form-group" id="row1">
+                                          <p  class="label2">Contact Number: <span class="label1" >09123456789</span></p>
+                          <!-- combobox intended here.... -->
+                                      </div>
+                              </div>
+                          </div>
+                          <div class="row" id="row1">
+                              <div class="col-lg-5" id="row1">
+                                      <div class="form-group" id="row1">
+                                          <p class="label2">Address:<span class="label1" > Bakakeng </span></p>
+                          <!-- combobox intended here.... -->
+                                      </div>
+                              </div>
+                          </div>
+                          <div class="row" id="row1">
+                              <div class="col-lg-5" id="row1">
+                                      <div class="form-group" id="row1">
+                                          <p  class="label2">E-mail:<span class="label1" >Jaysonaliway@yahoo.com </span> </a>
+                          <!-- combobox intended here.... -->
+                                      </div>
+                              </div>
+                          </div>
+                          <div class="row" id="row1">
+                              <div class="col-lg-5" id="row1">
+                                      <div class="form-group" id="row1">
+                                          <p  class="label2"> Role:<span class="label1" >Handler </span></p>
+                          <!-- combobox intended here.... -->
+                                      </div>
+                              </div>
+                          </div>
+                          <div class="row" id="row1">
+                              <div class="col-lg-5" id="row1">
+                                      <div class="form-group" id="row1">
+                                          <p  class="label2">Standing: <span class="label1" >Regular</span></p>
+                          <!-- combobox intended here.... -->
+                                      </div>
+                              </div>
+                          </div>
+                          <br>
+                          <table id="customers">
+                              <tr>
+                                <th>ID</th>
+                                <th>Customer Name</th>
+                                <th>Events/Rental Name</th>
+                                <th>Date</th>
+
+                              </tr>
+                              <tr>
+                                <td>001</td>
+                                <td>Emmarie Cayabyab</td>
+                                <td>Emm-Reu Nuptial</td>
+                                <td>December 18, 2017</td>
+                              </tr>
+                              <tr>
+                                <td>009</td>
+                                <td>Christina Berglund</td>
+                                <td>Debut</td>
+                                <td>January 23, 2018</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </table>
+        
+                          <br>
+
+                      </form>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default"  data-toggle="modal" data-target="#reset" id="respass">Reset Password</button>
+                      <!-- Reset Password Modal -->
+                        <!-- Modal -->
+                      <div class="modal fade" id="reset" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Password Reset</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>Change Password to DEFAULT</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                                          <!-- end of reset Password Modal -->
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
+                      <!-- Modal -->
+              <div class="modal fade" id="save" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">ALERT</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                          <div class="row">
+                              <p>Are you sure you want to save this?</p>
+                          <div class="col-lg-5">
+                          </div>
+                        </div>
+                      </form>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+                <!-- end of modal -->
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+                <!-- end of modal -->
+
                     </td>
                   </tr>
                 </tbody>
