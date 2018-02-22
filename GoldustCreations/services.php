@@ -17,7 +17,46 @@
   </head>
 	<body>
 	 <section class="content container-fluid">
-      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
+      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#adserv" >Add Service </a>
+      <!-- Modal for Add Services -->
+      <div class="modal fade" id="adserv" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Service</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Name:</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                          <div class="form-group" id="row1">
+                              <label>Description:</label>
+              <!-- combobox intended here.... -->
+                              <input type="text" id="staff-role" class="form-control">
+                          </div>
+                  </div>
+              </div>
+            </form>
+          </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      </div>
+      </div>
+      <!-- End of modal -->
 		<h2>   Active Services</h2>
 		<div class="box">
               <!-- /.box-header -->

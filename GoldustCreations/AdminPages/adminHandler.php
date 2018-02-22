@@ -85,7 +85,7 @@ desired effect
     <section class="content container-fluid">
       <a href="addHandler.php" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#addHandler">Add Employee</a>
        <!-- Modal -->
-  <div class="modal fade" id="addHandler" role="dialog">
+  <div class="modal fade" id="addHandler" role="dialog" >
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -175,7 +175,7 @@ desired effect
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
           <!-- Modal -->
-  <div class="modal fade" id="save" role="dialog">
+  <div class="modal fade" id="save" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -240,7 +240,7 @@ desired effect
                       <div class="col-md-3 col-sm-4"><a href="eventDetails.php"  data-toggle="modal" data-target="#info" ><i class="fa fa-fw fa-info" ></i></a></div>
                       <!-- Modal when you click each employee -->
                       <!-- Modal -->
-              <div class="modal fade" id="info" role="dialog">
+              <div class="modal fade" id="info" role="dialog" data-backdrop="static">
                 <div class="modal-dialog">
                 
                   <!-- Modal content-->
@@ -359,7 +359,7 @@ desired effect
                       <button type="button" class="btn btn-default"  data-toggle="modal" data-target="#reset" id="respass">Reset Password</button>
                       <!-- Reset Password Modal -->
                         <!-- Modal -->
-                      <div class="modal fade" id="reset" role="dialog">
+                      <div class="modal fade" id="reset" role="dialog" data-backdrop="static">
                         <div class="modal-dialog">
                         
                           <!-- Modal content-->
@@ -385,7 +385,7 @@ desired effect
               <!-- start of edit employee profile Modal -->
                       <!-- Modal -->
                         <!-- Modal -->
-  <div class="modal fade" id="edits" role="dialog">
+  <div class="modal fade" id="edits" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
     
       <!-- Modal content-->
