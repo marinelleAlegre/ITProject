@@ -48,14 +48,15 @@
             $_SESSION['username'] = $username;
             header("Location: ../handlerpages/home.php"); // Redirect user to index.php
        } else {
-            echo "<div class='form'><h3>Username/password is incorrect.</h3>
-                <br/>Click here to <a href='login1.php'>Login</a></div>";
+            //echo "<div class='form'><h3>Username/password is incorrect.</h3>
+                //<br/>Click here to <a href='login1.php'>Login</a></div>";
+            echo '<script type="text/javascript">window.alert("Username / password is incorrect. Please Try Again");';
+            echo 'window.location.href="login1.php" </script>';
+            //echo "<meta http-equiv='refresh' content='$timeout;$url' />";
        }
     } else {
 ?>
 <div class="limiter">
-<!--div id="registration-form"-->
-    <!--div class='fieldset'-->
     <div class="container-login100">
     <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
     <legend class="login100-form-title p-b-32">Account Login</legend>
@@ -75,14 +76,20 @@
                 <input type="password" name="password" placeholder="Password" class="input100" required />
                 </div>
 
+                <div class="flex-sb-m w-full p-b-48">
+                <div class="forgotPass" id="fpass">
+                    <a href="#" class="txt3"> Forgot Password? </a>
+                </div>
+                </div>
+
                 <div class="container-login100-form-btn">
-                <input name="submit" type="submit" value="Login" class="login100-form-btn" />
+                <input name="submit" type="submit" value="Login" class="login100-form-btn" id="login"/>
                 </div>
             </form>
        </div>
     </div>
 </div>
-<!--/div-->
+
     <div id="dropDownSelect1"></div>
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendor/animsition/js/animsition.min.js"></script>
