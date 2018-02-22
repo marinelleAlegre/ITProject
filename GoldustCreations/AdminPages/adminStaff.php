@@ -382,27 +382,131 @@ desired effect
                         </div>
                       </div>
                                           <!-- end of reset Password Modal -->
-                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#edits">Edit</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <!-- start of edit employee profile Modal -->
                       <!-- Modal -->
-              <div class="modal fade" id="save" role="dialog">
-                <div class="modal-dialog">
-                
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">ALERT</h4>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                          <div class="row">
-                              <p>Are you sure you want to save this?</p>
-                          <div class="col-lg-5">
-                          </div>
-                        </div>
-                      </form>
+                        <!-- Modal -->
+  <div class="modal fade" id="edits" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit
+        <div class="modal-body">
+          <form>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Name</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Contact Number</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Address</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Email</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Role</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Standing</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+          </form>
+        </div>
+        <table id="customers">
+                              <tr>
+                                <th>ID</th>
+                                <th>Customer Name</th>
+                                <th>Events/Rental Name</th>
+                                <th>Date</th>
 
-                    </div>
+                              </tr>
+                              <tr>
+                                <td>001</td>
+                                <td>Emmarie Cayabyab</td>
+                                <td>Emm-Reu Nuptial</td>
+                                <td>December 18, 2017</td>
+                              </tr>
+                              <tr>
+                                <td>009</td>
+                                <td>Christina Berglund</td>
+                                <td>Debut</td>
+                                <td>January 23, 2018</td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </table>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+              <!-- end of edit employee profile Modal -->
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
                       <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
@@ -413,7 +517,7 @@ desired effect
               </div>
 
                 <!-- end of modal -->
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
                     </div>
                   </div>
                   
