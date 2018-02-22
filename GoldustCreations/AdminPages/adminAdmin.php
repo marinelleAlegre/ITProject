@@ -45,7 +45,136 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
-      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Admin</a>
+      <a href="addAdmin.php" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#addAdmin">Add Employee</a>
+<!-- Modal -->
+  <div class="modal fade" id="addAdmin" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Create Employee</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                      <div class="form-group" id="row1">
+                          <label>Employee ID</label>
+                          <input type="text" id="staff-name" class="form-control">
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-7" id="row1">
+                          <div class="form-group" id="row1">
+                              <label>Employee Name</label>
+              <!-- combobox intended here.... -->
+                              <input type="text" id="staff-role" class="form-control">
+                          </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-5" id="row1">
+                          <div class="form-group" id="row1">
+                              <label>Contact Number</label>
+              <!-- combobox intended here.... -->
+                              <input type="text" id="staff-role" class="form-control">
+                          </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-5" id="row1">
+                          <div class="form-group" id="row1">
+                              <label>Address</label>
+              <!-- combobox intended here.... -->
+                              <input type="text" id="staff-role" class="form-control">
+                          </div>
+                  </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-5" id="row1">
+                          <div class="form-group" id="row1">
+                              <label>Email</label>
+              <!-- combobox intended here.... -->
+                              <input type="text" id="staff-role" class="form-control">
+                          </div>
+                  </div>
+              </div>
+              <br>
+               <div class="row" id="row1">
+                  <div class="col-lg-5" class="form-group" id="row1">
+                      <label>Role</label>
+                      <select name="services" class="form-control" id="sel-servc" value="Choose">
+                        <option value="make-up">Make-up Artist</option>
+                        <option value="attire-rental">Florist</option>
+                        <option value="photography">Photographer</option>
+                        <option value="video-coverage">Videographer</option>
+                        <option value="video-coverage">Gown Handler</option>
+                      </select>
+                    </div>
+              </div>
+              <div class="row" id="row1">
+                  <div class="col-lg-5" class="form-group" id="row1">
+                      <label>Standing</label>
+                      <select name="services" class="form-control" id="sel-servc" value="Choose">
+                        <option value="make-up">On-Call</option>
+                        <option value="attire-rental">Stay-In</option>
+                      </select>
+                    </div>
+              </div>
+              <br>
+              <div class="row" id="row1">
+                  <div class="col-lg-5" id="row1">      
+                      <button onclick="myFunction()"> Upload Photo </button>
+                  </div>
+              </div>
+              <br>
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
+          <!-- Modal -->
+  <div class="modal fade" id="save" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ALERT</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <p>Are you sure you want to save this?</p>
+              <div class="col-lg-5">
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- end of modal -->
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- end of modal -->
     <?php include("../EmployeeNav.php") ?>
       <div class="box">
             <div class="box-header">
