@@ -81,9 +81,12 @@ desired effect
               $conn = new mysqli($servername, $username, $pwd, $dbname);
 
               $query1 = "SELECT COUNT(*) as 'count' FROM events WHERE eventStatus LIKE 'on%going';";
+              
               $result1 = $conn->query($query1);
-              $row = $result1->fetch_assoc();
-              echo '<h3>' . $row["count"] . '</h3>';
+              
+              $row1 = $result1->fetch_assoc();
+              
+              echo '<h3>' . $row1["count"] . '</h3>';
               ?>
               <p>Ongoing Events</p>
               <div class="icon">
@@ -94,12 +97,17 @@ desired effect
           </div>
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>10</h3>
+              <?php
+              $query2 = "SELECT COUNT(*) as 'count' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.eventStatus LIKE 'on%going' AND e.packageType LIKE 'semi%package';";
+              $result2 = $conn->query($query2);
+              $row2 = $result2->fetch_assoc();
+              echo '<h3>' . $row2["count"] . '</h3>';
+              ?>
               <p>Ongoing Rentals</p>
               <div class="icon">
                 <i class="ion ion-bag"></i>
               </div>
-              <a href="#" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
+              <a href="home-ongoingRentals.php" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </div>
        </div>
 </div>

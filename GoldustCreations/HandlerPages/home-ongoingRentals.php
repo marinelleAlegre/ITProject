@@ -57,7 +57,7 @@ desired effect
           // connect to db
           $conn = new mysqli($servername, $username, $pwd, $dbname);
 
-          $query1 = "SELECT celebrantName, eventDate, eventTime, eventLocation, eventType, motif FROM events WHERE eventStatus LIKE 'on%going';";
+          $query1 = "SELECT s.serviceName 'Service Name', e.celebrantName 'Celebrant Name', c.clientName 'Client Name', c.contactNumber 'Contact Number' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.eventStatus LIKE 'on%going' AND e.packageType LIKE 'semi%package';";
 
           $result1 = $conn->query($query1);
 
@@ -68,24 +68,20 @@ desired effect
                   <table class="table table-bordered">
                     <thead>
                       <tr>
+                        <th>' . 'Service Name' . '</th>
                         <th>' . 'Celebrant Name' . '</th>
-                        <th>' . 'Event Date' . '</th>
-                        <th>' . 'Event Time' . '</th>
-                        <th>' . 'Event Location' . '</th>
-                        <th>' . 'Event Type' . '</th>
-                        <th>' . 'Motiff' . '</th>
+                        <th>' . 'Client Name' . '</th>
+                        <th>' . 'Contact Number' . '</th>
                       </tr>
                     </thead>
                     <tbody>';
             while ($row = $result1->fetch_assoc()) {
               echo 
               '<tr>
-                <td>' . $row["celebrantName"] . '</td>
-                <td>' . $row["eventDate"] . '</td>
-                <td>' . $row["eventTime"] . '</td>
-                <td>' . $row["eventLocation"] . '</td>
-                <td>' . $row["eventType"] . '</td>
-                <td>' . $row["motif"] . '</td>
+                <td>' . $row["Service Name"] . '</td>
+                <td>' . $row["Celebrant Name"] . '</td>
+                <td>' . $row["Client Name"] . '</td>
+                <td>' . $row["Contact Number"] . '</td>
               </tr>';
             }
             echo '</tbody>
