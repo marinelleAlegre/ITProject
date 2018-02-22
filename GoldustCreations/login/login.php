@@ -17,13 +17,13 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<?php
+<?php
     require('db.php');
     session_start();
     // If form submitted, insert values into the database.
     if (isset($_POST['username'])){
         
-        $username = stripslashes($_REQUEST['username']); // removes backslashes
+        $username = stripslashes($_REQUEST['user']); // removes backslashes
         $username = mysqli_real_escape_string($con,$username); //escapes special characters in a string
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con,$password);
@@ -60,7 +60,7 @@
 						Username
 					</span>
 					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
-						<input class="input100" type="text" id="username" >
+						<input class="input100" type="text" id="username" name="user">
 						<span class="focus-input100"></span>
 					</div>
 					
@@ -71,11 +71,11 @@
 						<span class="btn-show-pass">
 							<i class="fa fa-eye"></i>
 						</span>
-						<input class="input100" type="password" id="pass" >
+						<input class="input100" type="password" id="pass" name="password" >
 						<span class="focus-input100"></span>
 					</div>
 					
-					<div class="flex-sb-m w-full p-b-48">
+					<!--<div class="flex-sb-m w-full p-b-48">
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 							<label class="label-checkbox100" for="ckb1">
@@ -88,7 +88,7 @@
 								Forgot Password?
 							</a>
 						</div>
-					</div>
+					</div>-->
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" id="login">
