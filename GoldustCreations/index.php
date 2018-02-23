@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=HandlerPages/index.php" />
+    <meta http-equiv="refresh" content="0; url=login/login1.php" />
   </head>
   
   <body>
