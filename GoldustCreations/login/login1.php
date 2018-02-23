@@ -48,11 +48,8 @@
             $_SESSION['username'] = $username;
             header("Location: ../handlerpages/home.php"); // Redirect user to index.php
        } else {
-            //echo "<div class='form'><h3>Username/password is incorrect.</h3>
-                //<br/>Click here to <a href='login1.php'>Login</a></div>";
             echo '<script type="text/javascript">window.alert("Username / password is incorrect. Please Try Again");';
             echo 'window.location.href="login1.php" </script>';
-            //echo "<meta http-equiv='refresh' content='$timeout;$url' />";
        }
     } else {
 ?>

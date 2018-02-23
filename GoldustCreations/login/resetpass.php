@@ -38,7 +38,7 @@
                 <a href="../login/login1.php" id="fpass">Login Page</a>
             </div>
             <div class="container-login100-form-btn">
-                <input name="submit" type="submit" value="Submit" class="login100-form-btn" id="login"/>
+                <input name="submit" type="submit" value="Submit" class="login100-form-btn" id="submit"/>
             </div>
         </div>
     </div>
