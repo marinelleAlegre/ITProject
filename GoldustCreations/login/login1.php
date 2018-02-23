@@ -20,7 +20,7 @@
     </head>
 <body>
 <?php
-    require('db.php');
+    require('../db.php');
     session_start();
     // If form submitted, insert values into the database.
     if (isset($_POST['username'])){
@@ -78,7 +78,7 @@
 
                 <div class="flex-sb-m w-full p-b-48">
                 <div class="forgotPass" id="fpass">
-                    <a href="#" class="txt3"> Forgot Password? </a>
+                    <a href="resetpass.php" class="txt3"> Forgot Password? </a>
                 </div>
                 </div>
 

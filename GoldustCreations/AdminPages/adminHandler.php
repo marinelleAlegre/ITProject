@@ -173,7 +173,7 @@ desired effect
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save" data-dismiss="modal">Save</button>
           <!-- Modal -->
   <div class="modal fade" id="save" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
@@ -356,7 +356,7 @@ desired effect
                     </div>
                     </form>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-default"  data-toggle="modal" data-target="#reset" id="respass">Reset Password</button>
+                      <button type="button" class="btn btn-default"  data-toggle="modal" data-target="#reset" id="respass" data-dismiss="modal">Reset Password</button>
                       <!-- Reset Password Modal -->
                         <!-- Modal -->
                       <div class="modal fade" id="reset" role="dialog" data-backdrop="static">
