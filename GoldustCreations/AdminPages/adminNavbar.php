@@ -25,7 +25,7 @@
         <li>
           <a href="adminHome.php"><i class="glyphicon glyphicon-home"></i> <span>Home</span></a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="glyphicon glyphicon-briefcase"></i> 
             <span>Event</span>
@@ -50,7 +50,7 @@
         <li>
           <a href="adminTransacMonitor.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Transactions</span></a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="glyphicon glyphicon-briefcase"></i> 
             <span>Employees</span>
@@ -60,20 +60,20 @@
           </a>
           <ul class="treeview-menu">
             <li>
-              <a href="#">Handler</a>
+              <a href="adminHandler.php">Handler</a>
             </li>
             <li>
-              <a href="#">Staff</a>
+              <a href="adminStaff.php">Staff</a>
             </li>
             <li>
-              <a href="#">Admin</a>
+              <a href="adminEmployees.php">Admin</a>
             </li>
           </ul>
         </li>
         <li>
           <a href="adminServices.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="glyphicon glyphicon-briefcase"></i> 
             <span>Decors And Design</span>
@@ -83,40 +83,31 @@
           </a>
           <ul class="treeview-menu">
             <li>
-              <a href="#">Gowns</a>
+              <a href="adminGowns.php">Gowns</a>
             </li>
             <li>
-              <a href="#">Suits</a>
+              <a href="adminSuits.php">Suits</a>
             </li>
             <li>
-              <a href="#">Costumers</a>
+              <a href="adminCostumes.php">Costumers</a>
             </li>
             <li>
-              <a href="#">Decors</a>
+              <a href="adminDecors.php">Decors</a>
             </li>
           </ul>
         </li>
-        <!--
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
-        -->
       </ul>
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
   </aside>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/morris/raphael.min.js"></script>
-<script src="js/plugins/morris/morris.min.js"></script>
-<script src="js/plugins/morris/morris-data.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>

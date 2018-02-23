@@ -137,9 +137,6 @@ desired effect
       
     </div>
   </div>
-
-    <!-- end of modal -->
-      <?php include("adminItemNavigation.php"); ?>
           
       <div class="container" id="con">
       <div class="row text-center text-lg-left">

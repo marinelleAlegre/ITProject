@@ -1,6 +1,5 @@
 <header class="main-header">
     <nav class="navbar navbar-static-top">
-      <div class="container">
         <div class="navbar-header">
           <a href="#" class="navbar-brand"><b>Goldust Creations</b></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -105,7 +104,5 @@
           </ul>
         </div>
         <!-- /.navbar-custom-menu -->
-      </div>
-      <!-- /.container-fluid -->
     </nav>
   </header>
