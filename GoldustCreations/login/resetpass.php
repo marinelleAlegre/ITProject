@@ -34,6 +34,9 @@
                     <input type="text" name="username" placeholder="Username" class="input100" required />
                     <span class="focus-input100"></span>
             </div>
+            <div class="flex-sb-m w-full p-b-48">
+                <a href="../login/login1.php" id="fpass">Login Page</a>
+            </div>
             <div class="container-login100-form-btn">
                 <input name="submit" type="submit" value="Submit" class="login100-form-btn" id="login"/>
             </div>
