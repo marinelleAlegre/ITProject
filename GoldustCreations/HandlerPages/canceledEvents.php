@@ -45,69 +45,69 @@ desired effect
         Canceled Events
       </h1>
     </section>
-
     <!-- Main content -->
-<section class="content container-fluid">
-      <div class="box" id="box1">
-      <div class="box-header">
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>EventID</th>
-                  <th>Event Name</th>
-                  <th>Client Name</th>
-                  <th>Event Type</th>
-                  <th>Package Type</th>
-                  <th>Date and Time of event</th>
-                  <th>Location</th>
-                  <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>0003</td>
-                  <td>Jan-Toleds Nuptial</td>
-                  <td>Jann Toledo</td>
-                  <td>Wedding</td>
-                  <td>Full Package</td>
-                  <td>November 2, 2017 at 10 AM</td>
-                  <td>Bagui City</td>
-                  <td><div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#reactivate"><i class="fa fa-fw fa-check"></i></a></div>
-                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div></td>
+    <section class="content container-fluid">
+      <?php
+          require('../login/db.php');
 
-                      <!-- modal -->
-                      <div id="reactivate" class="modal fade" role="dialog">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
-                              <h4 class="modal-title">Reactivate</h4>
-                            </div>
-                            <div class="modal-body">
-                              <p>Undo cancellation of this event?</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="submit" class="btn btn-success">Yes</button>
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </tr>
-                </tbody>
-              </table>
+          $query1 = "SELECT 
+            e.celebrantName 'celebrant',
+            c.clientName 'client name',
+            e.eventType 'event type',
+            e.packageType 'package type',
+            e.eventDate 'event date',
+            e.eventTime 'event time',
+            e.eventLocation 'event location'
+            FROM events e NATURAL JOIN clients c
+            WHERE e.eventStatus LIKE 'cancel%'";
+
+          $result1 = $con->query($query1);
+      ?>
+          <div class="box">
+            <div class="box-body">
+                <div  class="table table-responsive">
+                  <table id ="example1" class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Event Name</th>
+                        <th>Client Name</th>
+                        <th>Event Type</th>
+                        <th>Package Type</th>
+                        <th>Event Date</th>
+                        <th>Event Time</th>
+                        <th>Event Location</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <?php if($result1->num_rows > 0){ 
+                      while ($row = $result1->fetch_assoc()) { ?> 
+                        <tr>
+                          <td><?php echo $row["celebrant"]; ?></td>
+                          <td><?php echo $row["client name"]; ?></td>
+                          <td><?php echo $row["event type"]; ?></td>
+                          <td><?php echo $row["package type"]; ?></td>
+                          <td><?php echo $row["event date"]; ?></td>
+                          <td><?php echo $row["event time"]; ?></td>
+                          <td><?php echo $row["event location"]; ?></td>
+                          <td>
+                            <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
+                            <div class="col-md-3 col-sm-4"><a href="#"><i class="glyphicon glyphicon-ok"></i></a></div>
+                          </td>
+                        </tr>
+                    <?php }
+                          }else{
+                            echo '0 results';
+                          } ?>    
+                    </tbody>
+                </table>
+              </div>
             </div>
-            <!-- /.box-body -->
           </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
     </section>
-    <!-- /.content -->
   </div>
+    <!-- /.content -->
+</div>
   <!-- /.content-wrapper -->
 
   <?php include("../footer.php") ?>

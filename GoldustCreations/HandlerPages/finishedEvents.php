@@ -41,50 +41,69 @@ desired effect
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1 class="pull-left">
+      <h1>
         Finished Events
       </h1>
     </section>
 
     <!-- Main content -->
     <section class="content container-fluid">
-      <div class="box" id="box1">
-      <div class="box-header">
-            </div>
-            <!-- /.box-header -->
+      <?php
+          require('../login/db.php');
+
+          $query1 = "SELECT 
+            e.celebrantName 'celebrant',
+            c.clientName 'client name',
+            e.eventType 'event type',
+            e.packageType 'package type',
+            e.eventDate 'event date',
+            e.eventTime 'event time',
+            e.eventLocation 'event location'
+            FROM events e NATURAL JOIN clients c
+            WHERE e.eventStatus LIKE 'finish%'";
+
+          $result1 = $con->query($query1);
+      ?>
+          <div class="box">
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th>EventID</th>
-                  <th>Event Name</th>
-                  <th>Client Name</th>
-                  <th>Event Type</th>
-                  <th>Package Type</th>
-                  <th>Date and Time of event</th>
-                  <th>Location</th>
-                  <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>0001</td>
-                  <td>Walwalan Reunion</td>
-                  <td>Ruel Bigo</td>
-                  <td>Reunion</td>
-                  <td>Semi Package</td>
-                  <td>November 28, 2017 at 10 AM</td>
-                  <td>Km 4 La Trinidad</td>
-                  <td><div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div></td>
-                </tr>
-                </tbody>
-              </table>
+                <div  class="table table-responsive">
+                  <table id ="example1" class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Event Name</th>
+                        <th>Client Name</th>
+                        <th>Event Type</th>
+                        <th>Package Type</th>
+                        <th>Event Date</th>
+                        <th>Event Time</th>
+                        <th>Event Location</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <?php if($result1->num_rows > 0){ 
+                      while ($row = $result1->fetch_assoc()) { ?> 
+                        <tr>
+                          <td><?php echo $row["celebrant"]; ?></td>
+                          <td><?php echo $row["client name"]; ?></td>
+                          <td><?php echo $row["event type"]; ?></td>
+                          <td><?php echo $row["package type"]; ?></td>
+                          <td><?php echo $row["event date"]; ?></td>
+                          <td><?php echo $row["event time"]; ?></td>
+                          <td><?php echo $row["event location"]; ?></td>
+                          <td>
+                            <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
+                          </td>
+                        </tr>
+                    <?php }
+                          }else{
+                            echo '0 results';
+                          } ?>    
+                    </tbody>
+                </table>
+              </div>
             </div>
-            <!-- /.box-body -->
           </div>
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
     </section>
     <!-- /.content -->
   </div>

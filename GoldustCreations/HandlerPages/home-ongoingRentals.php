@@ -42,57 +42,49 @@ desired effect
       <!-- Content Header (Page header) -->
       <section class="content-header">
       <h1>
-        Ongoing Events
+        Ongoing Rentals
       </h1>
       </section>
 
       <!-- Main content -->
       <section class="content container-fluid">
         <?php
-          $servername = "localhost";
-          $username = "root";
-          $pwd = "";
-          $dbname = "goldust";
-
-          // connect to db
-          $conn = new mysqli($servername, $username, $pwd, $dbname);
+          require('../login/db.php');
 
           $query1 = "SELECT s.serviceName 'Service Name', e.celebrantName 'Celebrant Name', c.clientName 'Client Name', c.contactNumber 'Contact Number' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.eventStatus LIKE 'on%going' AND e.packageType LIKE 'semi%package';";
 
-          $result1 = $conn->query($query1);
-
-          if($result1->num_rows > 0){
-            echo '<div class="box">
+          $result1 = $con->query($query1);
+        ?>
+        <div class="box">
             <div class="box-body">
-                <div class="table table-responsive">
-                  <table class="table table-bordered">
+                <div  class="table table-responsive">
+                  <table id ="example1" class="table table-bordered">
                     <thead>
                       <tr>
-                        <th>' . 'Service Name' . '</th>
-                        <th>' . 'Celebrant Name' . '</th>
-                        <th>' . 'Client Name' . '</th>
-                        <th>' . 'Contact Number' . '</th>
+                        <th>Service Name</th>
+                        <th>Celebrant Name</th>
+                        <th>Client Name</th>
+                        <th>Contact Number</th>
                       </tr>
                     </thead>
-                    <tbody>';
-            while ($row = $result1->fetch_assoc()) {
-              echo 
-              '<tr>
-                <td>' . $row["Service Name"] . '</td>
-                <td>' . $row["Celebrant Name"] . '</td>
-                <td>' . $row["Client Name"] . '</td>
-                <td>' . $row["Contact Number"] . '</td>
-              </tr>';
-            }
-            echo '</tbody>
-                  </table>
-                </div>
+                    <tbody>
+                    <?php if($result1->num_rows > 0){ 
+                      while ($row = $result1->fetch_assoc()) { ?> 
+                        <tr>
+                          <td><?php echo $row["Service Name"]; ?></td>
+                          <td><?php echo $row["Celebrant Name"]; ?></td>
+                          <td><?php echo $row["Client Name"]; ?></td>
+                          <td><?php echo $row["Contact Number"]; ?></td>
+                        </tr>
+                    <?php }
+                          }else{
+                            echo '0 results';
+                          } ?>    
+                    </tbody>
+                </table>
               </div>
-            </div>';
-          }else{
-            echo '0 results';
-          }
-        ?>
+            </div>
+          </div>
       </section>
 
   <?php include("../footer.php") ?>
@@ -112,6 +104,29 @@ desired effect
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
+<!-- DataTables -->
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
