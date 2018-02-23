@@ -7,7 +7,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <title>Events | Costumes</title>
   <?php include("../head.php") ?>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <style type="text/css">
 

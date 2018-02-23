@@ -17,7 +17,7 @@
 
       <!-- Sidebar Menu -->
       
-      <ul class="sidebar-menu" data-widget="tree">
+      <ul class="sidebar-menu tree" data-widget="tree">
         <li class="header"></li>
         <!-- Optionally, you can add icons to the links -->
         <li>
