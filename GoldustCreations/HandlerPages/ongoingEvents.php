@@ -45,7 +45,7 @@ desired effect
     <section class="content container-fluid">
       <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
         <?php
-          require('../login/db.php');
+          require('../db.php');
 
           $query1 = "SELECT 
             e.celebrantName 'celebrant',

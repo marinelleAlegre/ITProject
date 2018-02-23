@@ -49,7 +49,7 @@ desired effect
       <!-- Main content -->
       <section class="content container-fluid">
         <?php
-          require('../login/db.php');
+          require('../db.php');
 
           $query1 = "SELECT celebrantName, eventDate, eventTime, eventLocation, eventType, motif FROM events WHERE eventStatus LIKE 'on%going';";
 

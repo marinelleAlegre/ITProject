@@ -49,7 +49,7 @@ desired effect
       <!-- Main content -->
       <section class="content container-fluid">
         <?php
-          require('../login/db.php');
+          require('../db.php');
 
           $query1 = "SELECT s.serviceName 'Service Name', e.celebrantName 'Celebrant Name', c.clientName 'Client Name', c.contactNumber 'Contact Number' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.eventStatus LIKE 'on%going' AND e.packageType LIKE 'semi%package';";
 
@@ -68,7 +68,8 @@ desired effect
                       </tr>
                     </thead>
                     <tbody>
-                    <?php if($result1->num_rows > 0){ 
+                    <?php 
+                    if($result1->num_rows > 0){ 
                       while ($row = $result1->fetch_assoc()) { ?> 
                         <tr>
                           <td><?php echo $row["Service Name"]; ?></td>
