@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -76,8 +77,98 @@ desired effect
                   <td>Full Package</td>
                   <td>November 2, 2017 at 10 AM</td>
                   <td>Bagui City</td>
-                  <td><div class="col-md-3 col-sm-4"><a data-toggle="modal" data-target="#modal-danger"><i class="fa fa-fw fa-check"></i></a></div>
-                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div></td>
+                  <td>
+                      <div class="col-md-3 col-sm-4">
+                          <a href="eventDetails.php" data-toggle="modal" data-target="#edeve">
+                          <i class="fa fa-fw fa-info"></i>
+                          </a>
+                      <!--Start of editing canceled events -->
+                      <!-- Modal -->
+                      <div id="edeve" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Edit Event</h4>
+                            </div>
+                            <div class="modal-body">
+                            <div class="row">
+                              <form>
+                                <label for="fname">Event Name</label>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="Jan-Toleds Nuptial">
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <label for="fname">Client Name</label>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="Jann Toledo">
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <label for="fname">Event Type</label>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="Wedding">
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <label for="fname">Package Type</label>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="Full Package">
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <label for="fname">Date and time of event</label>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="November 2, 2017 at 10 AM">
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <label for="fname">Location</label>
+                                <input type="text" id="fname" name="fname" class="form-control" placeholder="Baguio City">
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <label for="fname">Add Referral</label>
+                                <input type="text" id="fname" name="fname" class="form-control">
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#save">Save</button>
+                              <!-- modal for save -->
+                              <div id="save" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Alert!!!</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Are you sure you want to save? </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <!-- end of save modal -->
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <!-- End of editing canceled events -->
+                      </div>
+                  </td>
                 </tr>
                 </tbody>
               </table>

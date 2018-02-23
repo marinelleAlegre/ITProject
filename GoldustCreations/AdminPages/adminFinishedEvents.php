@@ -7,6 +7,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   #box1 {
     margin-top: 15px;
   }
+  span.first {
+    font-weight: bold;
+  }
 </style>
 <html>
 <head>
@@ -62,7 +65,7 @@ desired effect
                   <th>Client Name</th>
                   <th>Event Type</th>
                   <th>Package Type</th>
-                  <th>Date and Time of event</th>
+                  <th>Date and Time of Event</th>
                   <th>Location</th>
                   <th>Actions</th>
                 </tr>
@@ -77,7 +80,34 @@ desired effect
                   <td>November 28, 2017 at 10 AM</td>
                   <td>Km 4 La Trinidad</td>
                   <td>
-                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php"><i class="fa fa-fw fa-info"></i></a></div>
+                      <div class="col-md-3 col-sm-4"><a href="eventDetails.php" data-toggle="modal" data-target="#viewin"><i class="fa fa-fw fa-info"></i></a>
+                      <!-- start of view finished event info -->
+
+                      <div id="viewin" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Walwalan Reunion</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p><span class="first">Event Name: </span> Walwalan Reunion </p>
+                              <p><span class="first">Client Name: </span>Ruel Bigo </p>
+                              <p><span class="first">Event Type: </span>Reunion </p>
+                              <p><span class="first">Package Type: </span>Semi-Package </p>
+                              <p><span class="first">Date and Time of Event: </span>November 28, 2017 at 10 AM </p>
+                              <p><span class="first">Location: </span>Km 4 La Trinidad </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <!-- end -->
+                      </div>
                   </td>
                 </tr>
                 </tbody>
