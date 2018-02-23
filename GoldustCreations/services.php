@@ -75,10 +75,70 @@
                       <td>Rental of Gowns</td>
                       <td id="tietch">
                       	<a href="#">
-          					<span class="glyphicon glyphicon-ban-circle" id="active"></span>
+          					<span class="glyphicon glyphicon-ban-circle" id="active" data-toggle="modal" data-target="#deact"></span>
+                    <!-- Modal for  deactivating services -->
+                  <div class="modal fade" id="deact" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> Are you sure you want to deactivate this Service? </p>  
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- End of modal for  deactivating services-->
         				</a>
         				<a href="#">
-          					<span class="glyphicon glyphicon-edit"></span>
+          					<span class="glyphicon glyphicon-edit" data-toggle="modal" data-target="#eddd"></span>
+                    <!--start of edit service modal -->
+                    <div class="modal fade" id="eddd" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Edit Service</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                            <div class="row" id="row1">
+                                <div class="col-lg-7" id="row1">
+                                    <div class="form-group" id="row1">
+                                        <label>Type:</label>
+                                        <input type="text" id="staff-name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="row1">
+                                <div class="col-lg-7" id="row1">
+                                        <div class="form-group" id="row1">
+                                            <label>Description:</label>
+                            <!-- combobox intended here.... -->
+                                            <input type="text" id="staff-role" class="form-control">
+                                        </div>
+                                </div>
+                            </div>
+                          </form>
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Edit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- end of edit service modal -->
         				</a>
         			  </td>
                     </tr>
@@ -87,10 +147,70 @@
                       <td>Rental of Accessories</td>
                       <td id="tietch">
                       	<a href="#">
-          					<span class="glyphicon glyphicon-ban-circle" id="active"></span>
+          					<span class="glyphicon glyphicon-ban-circle" id="active" data-toggle="modal" data-target="#deact"></span>
+                    <!-- Modal for  deactivating services -->
+                  <div class="modal fade" id="deact" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> Are you sure you want to deactivate this Service? </p>  
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- End of modal for  deactivating services-->
         				</a>
         				<a href="#">
-          					<span class="glyphicon glyphicon-edit"></span>
+          					<span class="glyphicon glyphicon-edit" data-toggle="modal" data-target="#eddd"></span>
+                    <!--start of edit service modal -->
+                    <div class="modal fade" id="eddd" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Edit Service</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                            <div class="row" id="row1">
+                                <div class="col-lg-7" id="row1">
+                                    <div class="form-group" id="row1">
+                                        <label>Type:</label>
+                                        <input type="text" id="staff-name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="row1">
+                                <div class="col-lg-7" id="row1">
+                                        <div class="form-group" id="row1">
+                                            <label>Description:</label>
+                            <!-- combobox intended here.... -->
+                                            <input type="text" id="staff-role" class="form-control">
+                                        </div>
+                                </div>
+                            </div>
+                          </form>
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Edit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- end of edit service modal -->
         				</a>
         			  </td>
                     </tr>
@@ -99,10 +219,70 @@
                       <td>Make-Up Services</td>
                       <td id="tietch">
                       	<a href="#">
-          					<span class="glyphicon glyphicon-ban-circle" id="active"></span>
+          					<span class="glyphicon glyphicon-ban-circle" id="active" data-toggle="modal" data-target="#deact"></span>
+                    <!-- Modal for  deactivating services -->
+                  <div class="modal fade" id="deact" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> Are you sure you want to deactivate this Service? </p>  
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- End of modal for  deactivating services-->
         				</a>
         				<a href="#">
-          					<span class="glyphicon glyphicon-edit"></span>
+          					<span class="glyphicon glyphicon-edit" data-toggle="modal" data-target="#eddd"></span>
+                    <!--start of edit service modal -->
+                    <div class="modal fade" id="eddd" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Edit Service</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                            <div class="row" id="row1">
+                                <div class="col-lg-7" id="row1">
+                                    <div class="form-group" id="row1">
+                                        <label>Type:</label>
+                                        <input type="text" id="staff-name" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="row1">
+                                <div class="col-lg-7" id="row1">
+                                        <div class="form-group" id="row1">
+                                            <label>Description:</label>
+                            <!-- combobox intended here.... -->
+                                            <input type="text" id="staff-role" class="form-control">
+                                        </div>
+                                </div>
+                            </div>
+                          </form>
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Edit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- end of edit service modal -->
         				</a>
         			  </td>
                     </tr>
@@ -137,8 +317,30 @@
                       <td>Gown</td>
                       <td>Rental of Gowns</td>
                       <td id="tietch">
-                      	<a href="#">
-          					<span class="glyphicon glyphicon-ok-sign" id="active"></span>
+                      	<a href="#" >
+          					<span class="glyphicon glyphicon-ok-sign" id="active" data-toggle="modal" data-target="#act"></span>
+                    <!-- Modal for  activating services -->
+                  <div class="modal fade" id="act" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> Are you sure you want to activate this Service? </p>  
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- End of modal for  activating services-->
+
         				</a>
         			  </td>
                     </tr>
@@ -147,7 +349,28 @@
                       <td>Rental of Accessories</td>
                       <td id="tietch">
                       	<a href="#">
-          					<span class="glyphicon glyphicon-ok-sign" id="active"></span>
+          					<span class="glyphicon glyphicon-ok-sign" id="active" data-toggle="modal" data-target="#act"></span>
+                  <!-- Modal for  activating services -->
+                  <div class="modal fade" id="act" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> Are you sure you want to activate this Service? </p>  
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- End of modal for  activating services-->
         				</a>
         			  </td>
                     </tr>
@@ -156,7 +379,28 @@
                       <td>Make-Up Services</td>
                       <td id="tietch">
                       	<a href="#">
-          					<span class="glyphicon glyphicon-ok-sign" id="active"></span>
+          					<span class="glyphicon glyphicon-ok-sign" id="active" data-toggle="modal" data-target="#act"></span>
+                  <!-- Modal for  activating services -->
+                  <div class="modal fade" id="act" role="dialog" >
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p> Are you sure you want to activate this Service? </p>  
+                      </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- End of modal for  activating services-->
         				</a>
         			  </td>
                     </tr>
