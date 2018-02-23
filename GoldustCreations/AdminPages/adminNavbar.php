@@ -16,16 +16,14 @@
       <!-- /.search form -->
 
       <!-- Sidebar Menu -->
-      <div class="dropdown-toogle">
-        
-      </div>
+      
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"></li>
         <!-- Optionally, you can add icons to the links -->
         <li>
           <a href="adminHome.php"><i class="glyphicon glyphicon-home"></i> <span>Home</span></a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="glyphicon glyphicon-briefcase"></i> 
             <span>Event</span>
@@ -50,7 +48,7 @@
         <li>
           <a href="adminTransacMonitor.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Transactions</span></a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="glyphicon glyphicon-briefcase"></i> 
             <span>Employees</span>
@@ -73,7 +71,7 @@
         <li>
           <a href="adminServices.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="glyphicon glyphicon-briefcase"></i> 
             <span>Decors And Design</span>
@@ -101,13 +99,3 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- FastClick -->
-<script src="../bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../dist/js/demo.js"></script>
