@@ -2,6 +2,6 @@
 session_start();
 if(session_destroy()) // Destroying All Sessions
 {
-header("Location: ../../login/login1.php"); // Redirecting To Home Page
+header("Location: ../goldustcreations/login/login1.php"); // Redirecting To Home Page
 }
 ?>

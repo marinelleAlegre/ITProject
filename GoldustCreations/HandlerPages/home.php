@@ -68,7 +68,7 @@ desired effect
           <div class="small-box bg-green">
             <div class="inner">
               <?php
-              require('../login/db.php');
+              require('../db.php');
 
               $query1 = "SELECT COUNT(*) as 'count' FROM events WHERE eventStatus LIKE 'on%going';";
               
