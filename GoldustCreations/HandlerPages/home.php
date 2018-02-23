@@ -47,10 +47,6 @@ desired effect
       </section>
 
       <!-- Main content -->
-
-      <!-- php code to connect to database -->
-      <?php?>
-
       <section class="content container-fluid">
         <div class="row">
           <div class="col-md-6">
@@ -72,17 +68,11 @@ desired effect
           <div class="small-box bg-green">
             <div class="inner">
               <?php
-              $servername = "localhost";
-              $username = "root";
-              $pwd = "";
-              $dbname = "goldust";
-
-              // connect to db
-              $conn = new mysqli($servername, $username, $pwd, $dbname);
+              require('../login/db.php');
 
               $query1 = "SELECT COUNT(*) as 'count' FROM events WHERE eventStatus LIKE 'on%going';";
               
-              $result1 = $conn->query($query1);
+              $result1 = $con->query($query1);
               
               $row1 = $result1->fetch_assoc();
               
@@ -99,7 +89,7 @@ desired effect
             <div class="inner">
               <?php
               $query2 = "SELECT COUNT(*) as 'count' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.eventStatus LIKE 'on%going' AND e.packageType LIKE 'semi%package';";
-              $result2 = $conn->query($query2);
+              $result2 = $con->query($query2);
               $row2 = $result2->fetch_assoc();
               echo '<h3>' . $row2["count"] . '</h3>';
               ?>

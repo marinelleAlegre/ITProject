@@ -49,18 +49,12 @@ desired effect
       <!-- Main content -->
       <section class="content container-fluid">
         <?php
-          $servername = "localhost";
-          $username = "root";
-          $pwd = "";
-          $dbname = "goldust";
-
-          // connect to db
-          $conn = new mysqli($servername, $username, $pwd, $dbname);
+          require('../login/db.php');
 
           $query1 = "SELECT celebrantName, eventDate, eventTime, eventLocation, eventType, motif FROM events WHERE eventStatus LIKE 'on%going';";
 
-          $result1 = $conn->query($query1);
-
+          $result1 = $con->query($query1);
+          /*
           if($result1->num_rows > 0){
             echo '<div class="box">
             <div class="box-body">
@@ -96,7 +90,42 @@ desired effect
           }else{
             echo '0 results';
           }
+          */
         ?>
+          <div class="box">
+            <div class="box-body">
+                <div  class="table table-responsive">
+                  <table id ="example1" class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Celebrant Name</th>
+                        <th>Event Date</th>
+                        <th>Event Time</th>
+                        <th>Event Location</th>
+                        <th>Event Type</th>
+                        <th>Motiff</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <?php if($result1->num_rows > 0){ 
+                      while ($row = $result1->fetch_assoc()) { ?> 
+                        <tr>
+                          <td><?php echo $row["celebrantName"]; ?></td>
+                          <td><?php echo $row["eventDate"]; ?></td>
+                          <td><?php echo $row["eventTime"]; ?></td>
+                          <td><?php echo $row["eventLocation"]; ?></td>
+                          <td><?php echo $row["eventType"]; ?></td>
+                          <td><?php echo $row["motif"]; ?></td>
+                        </tr>
+                    <?php }
+                          }else{
+                            echo '0 results';
+                          } ?>    
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
       </section>
 
   <?php include("../footer.php") ?>
@@ -116,6 +145,29 @@ desired effect
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../dist/js/adminlte.min.js"></script>
+<!-- DataTables -->
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
