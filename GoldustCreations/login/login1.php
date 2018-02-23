@@ -78,7 +78,7 @@
 
                 <div class="flex-sb-m w-full p-b-48">
                 <div class="forgotPass" id="fpass">
-                    <a href="#" class="txt3"> Forgot Password? </a>
+                    <a href="resetpass.php" class="txt3"> Forgot Password? </a>
                 </div>
                 </div>
 
