@@ -8,6 +8,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>Handler | Ongoing Events</title>
   <?php include("../head.php") ?>
 </head>
+<style type="text/css">
+label {
+  margin-left: 20px;
+}
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+}
+</style>
 <!--
 BODY TAG OPTIONS:
 =================
@@ -44,7 +61,7 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
-      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
+      <a href="../addEventAdmin.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
       <div class="box">
             <!-- /.box-header -->
             <div class="box-body">
@@ -87,38 +104,62 @@ desired effect
                             <div class="modal-body">
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Event Name</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Client Name</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Event Type</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Package Type</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
-                                <label for="fname">Date and time of event</label>
+                              <div class="col-25">
+                                <label for="fname">Date and Time of Event</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Location</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="modal-footer">
@@ -150,7 +191,7 @@ desired effect
                           </div>
 
                         </div>
-                      </div
+                      </div>
                       <!-- End of editing ongoing events -->
                     </td>
                   </tr>
