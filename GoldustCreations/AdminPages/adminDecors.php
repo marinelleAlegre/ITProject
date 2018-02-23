@@ -135,9 +135,6 @@ desired effect
       
     </div>
   </div>
-
-    <!-- end of modal -->
-      <?php include("adminItemNavigation.php"); ?>
       <!--------------------------
         | Your Page Content Here |
         -------------------------->

@@ -44,7 +44,7 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
-    <?php include("../EmployeeNav.php") ?>
+      
       <div class="box">
             <div class="box-header">
             </div>
