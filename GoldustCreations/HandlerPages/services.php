@@ -44,6 +44,15 @@ desired effect
 
     <!-- Main content -->
     <section class="content container-fluid">
+
+      <?php
+          require('../db.php');
+
+          $query1 = "SELECT s.serviceName 'Service Name', e.celebrantName 'Celebrant Name', c.clientName 'Client Name', c.contactNumber 'Contact Number', e.eventStatus 'Event Status' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.packageType LIKE 'semi%package';";
+
+          $result1 = $con->query($query1);
+      ?>
+
       <div class="content">
         <div class="row">
           <div class="col-md-6">
@@ -152,49 +161,76 @@ desired effect
           <div class="col-md-6"> 
             <div class="box">
                 <div class="box-header">
-                  <h3 class="box-title">Data Table With Full Features</h3>
+                  <h3 class="box-title">Ongoing Rentals</h3>
                 </div>
                 <!-- /.box-header -->
-
                 <div class="box-body">
-                  <table id="rentalTable" class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                      <th>Service ID</th>
-                      <th>Name</th>
-                      <th>Service</th>
-                      <th>Date</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                  </table>
+                    <div  class="table table-responsive">
+                      <table id ="rentalTable" class="table table-bordered table-condensed">
+                        <thead>
+                          <tr>
+                            <th>Service Name</th>
+                            <th>Celebrant Name</th>
+                            <th>Client Name</th>
+                            <th>Contact Number</th>
+                            <th>Event Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <?php 
+                        if($result1->num_rows > 0){ 
+                          while ($row = $result1->fetch_assoc()) { ?> 
+                            <tr>
+                              <td><?php echo $row["Service Name"]; ?></td>
+                              <td><?php echo $row["Celebrant Name"]; ?></td>
+                              <td><?php echo $row["Client Name"]; ?></td>
+                              <td><?php echo $row["Contact Number"]; ?></td>
+                              <td><?php echo $row["Event Status"]; ?></td>
+                            </tr>
+                        <?php }
+                              }else{
+                                echo '0 results';
+                              } ?>    
+                        </tbody>
+                    </table>
+                  </div>
                 </div>
-                <!-- /.box-body -->
               </div>
             </div>
             <div class="col-md-6">
               <div class="box">
                 <div class="box-header">
-                  <h3 class="box-title">Data Table With Full Features</h3>
+                  <h3 class="box-title">Service Transaction</h3>
                 </div>
-                <!-- /.box-header -->
-
                 <div class="box-body">
-                  <table id="serviceTable" class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                      <th>Service ID</th>
-                      <th>Name</th>
-                      <th>Service</th>
-                      <th>Date</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                  </table>
+                    <div  class="table table-responsive">
+                      <table id ="serviceTable" class="table table-bordered tab le-condensed">
+                        <thead>
+                          <tr>
+                            <th>Service Name</th>
+                            <th>Celebrant Name</th>
+                            <th>Client Name</th>
+                            <th>Contact Number</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                            if($result1->num_rows > 0){ 
+                              while ($row = $result1->fetch_assoc()) { ?> 
+                                <tr>
+                                  <td><?php echo $row["Service Name"]; ?></td>
+                                  <td><?php echo $row["Celebrant Name"]; ?></td>
+                                  <td><?php echo $row["Client Name"]; ?></td>
+                                  <td><?php echo $row["Contact Number"]; ?></td>
+                                </tr>
+                            <?php }
+                              }else{
+                                echo '0 results';
+                              } ?> 
+                        </tbody>
+                    </table>
+                  </div>
                 </div>
-              <!-- /.box-body -->
             </div>
           </div>
         </div>
@@ -232,7 +268,8 @@ desired effect
 <script>
   $(function () {
     $('#rentalTable').DataTable()
-    $('#serviceTable').DataTable({
+    $('#serviceTable').DataTable()
+    $('#example2').DataTable({
       'paging'      : true,
       'lengthChange': true,
       'searching'   : true,
