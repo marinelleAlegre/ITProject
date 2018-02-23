@@ -8,6 +8,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
   #box1 {
     margin-top: 15px;
   }
+  label {
+  margin-left: 20px;
+}
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+}
 </style>
 <html>
 <head>
@@ -96,44 +111,72 @@ desired effect
                             <div class="modal-body">
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Event Name</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Jan-Toleds Nuptial">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Client Name</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Jann Toledo">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Event Type</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Wedding">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Package Type</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Full Package">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Date and time of event</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="November 2, 2017 at 10 AM">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Location</label>
+                              </div>
+                              <div class="col-75">
                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Baguio City">
+                              </div>
                               </form>
                             </div>
                             <div class="row">
                               <form>
+                              <div class="col-25">
                                 <label for="fname">Add Referral</label>
+                              </div>
+                              <div class="col-25">
                                 <input type="text" id="fname" name="fname" class="form-control">
+                              </div>
                               </form>
                             </div>
                             <div class="modal-footer">

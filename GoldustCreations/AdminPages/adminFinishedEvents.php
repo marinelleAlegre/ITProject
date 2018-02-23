@@ -4,11 +4,19 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <style type="text/css">
-  #box1 {
-    margin-top: 15px;
-  }
-  span.first {
-    font-weight: bold;
+}
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+}
+
+.col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 10px;
+}
   }
 </style>
 <html>
@@ -91,13 +99,44 @@ desired effect
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
                               <h4 class="modal-title">Walwalan Reunion</h4>
                             </div>
+                            <br>
                             <div class="modal-body">
-                              <p><span class="first">Event Name: </span> Walwalan Reunion </p>
-                              <p><span class="first">Client Name: </span>Ruel Bigo </p>
-                              <p><span class="first">Event Type: </span>Reunion </p>
-                              <p><span class="first">Package Type: </span>Semi-Package </p>
-                              <p><span class="first">Date and Time of Event: </span>November 28, 2017 at 10 AM </p>
-                              <p><span class="first">Location: </span>Km 4 La Trinidad </p>
+                            <div class="col-25">
+                              <span class="first">Event Name: </span> 
+                            </div>
+                            <div class="col-75">
+                              <p> Walwalan Reunion </p>
+                            </div>
+                            <div class="col-25">
+                              <span class="first">Client Name: </span>
+                            </div>
+                            <div class="col-75">
+                              <p>Ruel Bigo </p>
+                            </div>
+                            <div class="col-25">
+                              <span class="first">Event Type: </span>
+                            </div>
+                            <div class="col-75">
+                              <p>Reunion </p>
+                            </div>
+                            <div class="col-25">
+                              <span class="first">Package Type: </span>
+                            </div>
+                            <div class="col-75">
+                              <p>Semi-Package </p>
+                            </div>
+                            <div class="col-25">
+                              <span class="first">Date and Time of Event: </span>
+                            </div>
+                            <div class="col-75">
+                              <p>November 28, 2017 at 10 AM </p>
+                            </div>
+                            <div class="col-25">
+                              <span class="first">Location: </span>
+                            </div>
+                            <div class="col-75">
+                              <p> Km 4 La Trinidad </p>
+                            </div>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
