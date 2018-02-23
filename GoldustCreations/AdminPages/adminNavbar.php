@@ -16,7 +16,7 @@
       <!-- /.search form -->
 
       <!-- Sidebar Menu -->
-      <div class="dropdown-">
+      <div class="dropdown-toogle">
         
       </div>
       <ul class="sidebar-menu" data-widget="tree">
@@ -25,9 +25,14 @@
         <li>
           <a href="adminHome.php"><i class="glyphicon glyphicon-home"></i> <span>Home</span></a>
         </li>
-        <li class="active treeview">
-          <a><i class="glyphicon glyphicon-user"></i> <span>Events</span></a>
-
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-briefcase"></i> 
+            <span>Event</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
           <ul class="treeview-menu">
             <li>
               <a href="adminOnGoingEvents.php"><i class=""></i>Ongoing Events</a>
@@ -45,14 +50,51 @@
         <li>
           <a href="adminTransacMonitor.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Transactions</span></a>
         </li>
-        <li>
-          <a href="adminEmployees.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Employees</span></a>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-briefcase"></i> 
+            <span>Employees</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#">Handler</a>
+            </li>
+            <li>
+              <a href="#">Staff</a>
+            </li>
+            <li>
+              <a href="#">Admin</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="adminServices.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Services</span></a>
         </li>
-        <li>
-          <a href="adminGowns.php"><i class="glyphicon glyphicon-briefcase"></i> <span>Decors And Design</span></a>
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-briefcase"></i> 
+            <span>Decors And Design</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="#">Gowns</a>
+            </li>
+            <li>
+              <a href="#">Suits</a>
+            </li>
+            <li>
+              <a href="#">Costumers</a>
+            </li>
+            <li>
+              <a href="#">Decors</a>
+            </li>
+          </ul>
         </li>
         <!--
         <li class="treeview">
