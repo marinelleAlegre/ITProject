@@ -5,8 +5,7 @@
         <title>GOLDUST CREATIONS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+        <!--link rel="icon" type="image/png" href="images/icons/favicon.ico"/-->
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -17,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="icon" href="../goldust.png">
     </head>
 <body>
 <?php
@@ -32,12 +32,12 @@
         
     //Checking is user existing in the database or not
         //Admin
-       $query1 = "SELECT * FROM `employees` WHERE username='$username' AND password='$password' AND role='admin'";
+       $query1 = "SELECT * FROM `employees` WHERE username='$username' AND password='".md5($password)."' AND role='admin'";
        $adminResult = mysqli_query($con, $query1) or die(mysql_error());
        $adminLogin = mysqli_num_rows($adminResult);
        
         //Handler
-       $query2 = "SELECT * FROM `employees` WHERE username='$username' AND password='$password' AND role='handler'";
+       $query2 = "SELECT * FROM `employees` WHERE username='$username' AND password='".md5($password)."' AND role='handler'";
        $handlerResult = mysqli_query($con, $query2) or die(mysql_error());
        $handlerLogin = mysqli_num_rows($handlerResult);
 
