@@ -48,7 +48,7 @@ desired effect
     <!-- Main content -->
     <section class="content container-fluid">
       <?php
-          require('../db.php');
+          require("../db.php");
 
           $query1 = "SELECT 
             e.celebrantName 'celebrant',
@@ -66,7 +66,7 @@ desired effect
           <div class="box">
             <div class="box-body">
                 <div  class="table table-responsive">
-                  <table id ="example1" class="table table-bordered">
+                  <table id ="example1" class="table table-bordered table-condensed table-hover text-center">
                     <thead>
                       <tr>
                         <th>Event Name</th>

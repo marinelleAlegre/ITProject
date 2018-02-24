@@ -42,29 +42,178 @@ desired effect
     </section>
 
     <!-- Main content -->
-    <section class="content container-fluid">
-      <a href="addEvent.php" class="btn btn-block btn-primary btn-lg">Add Event</a>
-        <?php
-          require('../db.php');
-
-          $query1 = "SELECT 
-            e.celebrantName 'celebrant',
-            c.clientName 'client name',
-            e.eventType 'event type',
-            e.packageType 'package type',
-            e.eventDate 'event date',
-            e.eventTime 'event time',
-            e.eventLocation 'event location'
-            FROM events e NATURAL JOIN clients c
-            WHERE e.eventStatus LIKE 'on%going'";
+    <?php
+        require("../db.php");
+        $query1 = "SELECT 
+          e.celebrantName 'celebrant',
+          c.clientName 'client name',
+          e.eventType 'event type',
+          e.packageType 'package type',
+          e.eventDate 'event date',
+          e.eventTime 'event time',
+          e.eventLocation 'event location'
+          FROM events e NATURAL JOIN clients c
+          WHERE e.eventStatus LIKE 'on%going'";
 
           $result1 = $con->query($query1);
-          ?>
-       
+    ?>
+
+    <section class="content container-fluid">
+      <button class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#add-event">Add Event</button>
+
+        <!-- add event modal -->
+        <div id="add-event" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Add Event</h4>
+              </div>
+              <div class="modal-body">
+                <form method="post">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label>Event Name</label>
+                        <input type="text" name="event-name" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Client Name</label>
+                        <input type="text" name="client-name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Contact Number</label>
+                        <input type="text" name="contact-number" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Celebrant</label>
+                        <input type="text" name="celebrant" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div>
+                        <label>Motiff</label>
+                        <input type="color" name="motiff" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label>Event Date</label>
+                        <input type="date" name="event-date" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label>Event Time</label>
+                        <input type="time" name="event-time" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label>Package Availed</label>
+                        <span class="radio"><label><input type="radio" name="event-time" value="full-Package">Full Package</label></span>
+                        <soan class="radio"><label><input type="radio" name="event-time" value="semi-Package">Semi Package</label></soan>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label>Event Location</label>
+                        <input type="text" name="event-loc" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Services -->
+                  <?php 
+                    $query2 = "SELECT serviceName FROM services WHERE status LIKE 'active'";
+
+                    $result2 = $con->query($query2);
+                  ?>
+                  <div class="box">
+                    <div class="box-body">
+                      <div class="table table-responsive">
+                        <table id="svc-tbl" class="table table-hover table-bordered table-condensed table-hover text-center">
+                          <h4>Services</h4>
+                          <thead>
+                            <tr>
+                              <th>Services</th>
+                              <th>Quantity</th>
+                              <th>Amount</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!--
+                            <tr>
+                              <td>
+                                <form>
+                                  <div class="form-group checkbox">
+                                    <label><input type="checkbox" id="" value="gowns">Gowns</label>
+                                  </div>
+                                </form>
+                              </td>
+                              <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                              <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                            </tr>
+                            -->
+                            <?php if($result2->num_rows > 0){ 
+                              while ($row = $result2->fetch_assoc()) { ?> 
+                                <tr>
+                                  <td><form><span class="form-group checkbox"><label><input type="checkbox" value="<?php $row["serviceName"]; ?>"><?php echo $row["serviceName"]; ?></label></span></form></td>
+                                  <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                                  <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                                </tr>
+                            <?php }
+                                  }else{
+                                    echo '0 results';
+                                  } ?>
+                            <!--
+                            <td>
+                              <form>
+                                <div class="form-group checkbox">
+                                  <label><input type="checkbox" name="" value="makeup">Makeup</label>
+                                </div>
+                              </form>
+                            </td> 
+                            --> 
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div> 
+                </form>
+                <div class="modal-footer">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <button type="submit" class="btn btn-success" action="submitForm.php">Save</button>
+                    </div>
+                    <div class="col-lg-2">
+                      <button type="reset" class="btn btn-danger" onclick="reset_chkbx()">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
         <div class="box">
             <div class="box-body">
                 <div  class="table table-responsive">
-                  <table id ="example1" class="table table-bordered">
+                  <table id ="example1" class="table table-bordered table-condensed table-hover text-center">
                     <thead>
                       <tr>
                         <th>Event Name</th>
@@ -180,6 +329,7 @@ desired effect
 <script>
   $(function () {
     $('#example1').DataTable()
+    $('#svc-tbl').DataTable()
     $('#example2').DataTable({
       'paging'      : true,
       'lengthChange': false,
@@ -189,6 +339,10 @@ desired effect
       'autoWidth'   : false
     })
   })
+
+  function reset_chkbx(){
+    $('input:checkbox').prop('checked', false);
+  }
 </script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

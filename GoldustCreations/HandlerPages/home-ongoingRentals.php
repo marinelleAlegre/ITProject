@@ -58,7 +58,7 @@ desired effect
         <div class="box">
             <div class="box-body">
                 <div  class="table table-responsive">
-                  <table id ="example1" class="table table-bordered">
+                  <table id ="example1" class="table table-bordered table-condensed table-hover text-center">
                     <thead>
                       <tr>
                         <th>Service Name</th>

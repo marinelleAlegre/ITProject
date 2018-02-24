@@ -67,7 +67,7 @@ desired effect
           <div class="box">
             <div class="box-body">
                 <div  class="table table-responsive">
-                  <table id ="example1" class="table table-bordered">
+                  <table id ="example1" class="table table-bordered table-hover table-condensed text-center">
                     <thead>
                       <tr>
                         <th>Event Name</th>
