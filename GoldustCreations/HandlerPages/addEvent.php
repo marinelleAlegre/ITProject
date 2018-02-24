@@ -29,6 +29,7 @@ desired effect
 |---------------------------------------------------------|
 -->
 <body class="hold-transition skin-blue layout-top-nav">
+  <?php require('../db.php'); ?>
 <div class="wrapper">
   <?php include("../header.php") ?>
 
@@ -44,24 +45,24 @@ desired effect
     <!-- Main content -->
     <section class="content container-fluid">
           <!-- .... Event Details .... -->
-          <form>
+          <form method="post">
             <div class="row">
               <div class="col-lg-4">
                 <div class="form-group">
                   <label>Event Name</label>
-                  <input type="text" id="event-name" class="form-control">
+                  <input type="text" name="event-name" class="form-control">
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="form-group">
                   <label>Client Name</label>
-                  <input type="text" id="client-name" class="form-control">
+                  <input type="text" name="client-name" class="form-control">
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="form-group">
                   <label>Contact Number</label>
-                  <input type="text" id="contact-number" class="form-control">
+                  <input type="text" name="contact-number" class="form-control">
                 </div>
               </div>
             </div>
@@ -69,13 +70,13 @@ desired effect
               <div class="col-lg-6">
                 <div class="form-group">
                   <label>Celebrant</label>
-                  <input type="text" id="celebrant" class="form-control">
+                  <input type="text" name="celebrant" class="form-control">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div>
                   <label>Motiff</label>
-                  <input type="color" id="motiff" class="form-control">
+                  <input type="color" name="motiff" class="form-control">
                 </div>
               </div>
             </div>
@@ -83,26 +84,26 @@ desired effect
               <div class="col-lg-3">
                 <div class="form-group">
                   <label>Event Date</label>
-                  <input type="date" id="event-date" class="form-control">
+                  <input type="date" name="event-date" class="form-control">
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
                   <label>Event Time</label>
-                  <input type="time" id="event-time" class="form-control">
+                  <input type="time" name="event-time" class="form-control">
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
                   <label>Event Location</label>
-                  <input type="text" id="event-time" class="form-control">
+                  <input type="text" name="event-loc" class="form-control">
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="form-group">
                   <label>Package Availed</label>
-                  <span class="radio"><label><input type="radio" id="event-time" value="full-Package">Full Package</label></span>
-                  <soan class="radio"><label><input type="radio" id="event-time" value="semi-Package">Semi Package</label></soan>
+                  <span class="radio"><label><input type="radio" name="event-time" value="full-Package">Full Package</label></span>
+                  <soan class="radio"><label><input type="radio" name="event-time" value="semi-Package">Semi Package</label></soan>
                 </div>
               </div>
             </div>
@@ -128,18 +129,18 @@ desired effect
                           </div>
                         </form>
                       </td>
-                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
-                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
+                      <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                      <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
                     </tr>
                     <td>
                       <form>
                         <div class="form-group checkbox">
-                          <label><input type="checkbox" id="" value="makeup">Makeup</label>
+                          <label><input type="checkbox" name="" value="makeup">Makeup</label>
                         </div>
                       </form>
                     </td> 
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
-                    <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td> 
+                    <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                    <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td> 
                   </tbody>
                 </table>
               </div>
@@ -157,9 +158,9 @@ desired effect
                   </thead>
                   <tbody id="staff-body" onclick="clicked_id(this.id)">
                     <tr>
-                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
-                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
-                      <td><input class="form-control" type="text" id="" style="border: none;" placeholder="Insert text here"></td>
+                      <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                      <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
+                      <td><input class="form-control" type="text" name="" style="border: none;" placeholder="Insert text here"></td>
                       <td>Available</td>
                       <td><a><span class="glyphicon glyphicon-remove" style="margin: 2px;" onclick="rmvrow(this)"></span></a><a data-toggle="modal" data-target="#edit-staff"><span class="glyphicon glyphicon-pencil" style="margin: 2px;"></span></a></td>
 
@@ -485,7 +486,7 @@ desired effect
           </div>
           <div class="row">
             <div class="col-lg-1 col-lg-offset-10">
-              <button type="submit" class="btn btn-success">Save</button>
+              <button type="submit" class="btn btn-success" action="submitForm.php">Save</button>
             </div>
             <div class="col-lg-1">
               <button type="reset" class="btn btn-danger">Reset</button>
