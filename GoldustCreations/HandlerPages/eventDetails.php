@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
@@ -54,63 +54,42 @@ desired effect
                   <label>Event Name</label>
                   <input type="text" id="event-name" class="form-control">
                 </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="form-group">
-                  <label>Client Name</label>
-                  <input type="text" id="client-name" class="form-control">
-                </div>
-              </div>
-              <div class="col-lg-4">
                 <div class="form-group">
                   <label>Contact Number</label>
                   <input type="text" id="contact-number" class="form-control">
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Client Name</label>
+                  <input type="text" id="client-name" class="form-control">
+                </div>
                 <div class="form-group">
                   <label>Celebrant</label>
                   <input type="text" id="celebrant" class="form-control">
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div>
-                  <label>Motiff</label>
-                  <input type="color" id="motiff" class="form-control">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-3">
                 <div class="form-group">
                   <label>Event Date</label>
                   <input type="date" id="event-date" class="form-control">
                 </div>
-              </div>
-              <div class="col-lg-3">
                 <div class="form-group">
                   <label>Event Time</label>
                   <input type="time" id="event-time" class="form-control">
                 </div>
-              </div>
-              <div class="col-lg-3">
                 <div class="form-group">
                   <label>Event Location</label>
                   <input type="text" id="event-time" class="form-control">
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-8">
+                <div>
+                  <label>Motiff</label>
+                  <input type="color" id="motiff" class="form-control">
+                </div>
                 <div class="form-group">
                   <label>Package Availed</label>
                   <span class="radio"><label><input type="radio" id="event-time" value="full-Package">Full Package</label></span>
                   <soan class="radio"><label><input type="radio" id="event-time" value="semi-Package">Semi Package</label></soan>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="table-responsive col-lg-6">
+                <div class="table-responsive">
                 <table id="" class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -143,7 +122,7 @@ desired effect
                   </tbody>
                 </table>
               </div>
-              <div class="table-responsive col-lg-6">
+              <div class="table-responsive">
                 <table id="" class="table table-striped table-bordered">
                   <thead>
                     <tr>
@@ -169,10 +148,9 @@ desired effect
                 </table>
               </div>
             </div>
+            </div>  
           </form>
         </div>
-       </div>
-       
     </section>
   </div>
   <!-- /.content-wrapper -->
