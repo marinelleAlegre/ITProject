@@ -26,7 +26,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </style>
 <html>
 <head>
-  <title>Handler | Canceled Events</title>
+  <title>Admin | Canceled Events</title>
   <?php include("../head.php") ?>
 </head>
 <!--
