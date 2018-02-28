@@ -5,7 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <title>Admin | Emplooyes</title>
+  <title>Admin | Employees</title>
   <?php include("../head.php") ?>
 </head>
 <style type="text/css">

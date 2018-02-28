@@ -5,7 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <title>Handler | Home</title>
+  <title>Admin | Home</title>
   <?php include("../head.php") ?>
 </head>
 <!--
@@ -55,7 +55,7 @@ desired effect
               <h3>10</h3>
               <p>New Events</p>
               <div class="icon">
-                <i class="ion ion-bag"></i>
+                <i class="ion ion-android-calendar"></i>
               </div>
               <a href="#" class="small-box-footer">More Info<i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -65,6 +65,15 @@ desired effect
           <div class="small-box bg-green">
             <div class="inner">
               <h3>10</h3>
+              $query1 = "SELECT COUNT(*) as 'count' FROM events WHERE eventStatus LIKE 'on%going';";
+              
+              $result1 = $con->query($query1);
+              
+              $row1 = $result1->fetch_assoc();
+              
+              echo '<h3>' . $row1["count"] . '</h3>';
+              ?>
+
               <p>Ongoing Events</p>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -76,7 +85,12 @@ desired effect
         <div class="col-lg-4 col-xs-6">
           <div class="small-box bg-green">
             <div class="inner">
-              <h3>10</h3>
+              <?php
+              $query2 = "SELECT COUNT(*) as 'count' FROM services s NATURAL JOIN eventservices es NATURAL JOIN events e NATURAL JOIN clients c WHERE s.serviceName LIKE '%rental%' AND e.eventStatus LIKE 'on%going' AND e.packageType LIKE 'semi%package';";
+              $result2 = $con->query($query2);
+              $row2 = $result2->fetch_assoc();
+              echo '<h3>' . $row2["count"] . '</h3>';
+              ?>
               <p>Ongoing Rentals</p>
               <div class="icon">
                 <i class="ion ion-bag"></i>

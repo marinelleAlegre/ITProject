@@ -5,7 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <title>Handler | Ongoing Events</title>
+  <title>Admin | Ongoing Events</title>
   <?php include("../head.php") ?>
 </head>
 <style type="text/css">
